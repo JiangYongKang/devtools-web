@@ -33,25 +33,26 @@ export default function ToolPage() {
   return (
     <div className="page tool-page">
       <nav className="breadcrumb" aria-label="层级导航">
-        <Link to="/">首页</Link>
-        <span className="sep" aria-hidden="true">
-          /
-        </span>
-        <span className="current">{tool.name}</span>
+        <div className="breadcrumb-left">
+          <Link to="/">首页</Link>
+          <span className="sep" aria-hidden="true">
+            /
+          </span>
+          <span className="current">{tool.name}</span>
+        </div>
+        <div className="breadcrumb-right">
+          <Link className="back-link" to="/">
+            返回首页
+          </Link>
+        </div>
       </nav>
 
       <article className="tool-detail">
-        <header>
-          <p className="tool-id-badge">任务 {tool.id}</p>
+        <header className="tool-header">
           <h1>{tool.name}</h1>
         </header>
         <p className="tool-summary-text">{tool.summary}</p>
         <ToolContent toolId={tool.id} />
-        <p>
-          <Link className="back-link" to="/">
-            ← 返回工具索引
-          </Link>
-        </p>
       </article>
     </div>
   )

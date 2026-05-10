@@ -15,8 +15,10 @@ export default function HomePage() {
         {tools.map((tool) => (
           <li key={tool.id}>
             <Link className="tool-card" to={`/tools/${tool.id}`}>
-              <span className="tool-id">{tool.id}</span>
-              <span className="tool-name">{tool.name}</span>
+              <span className="tool-title">
+                <span className="tool-title-id">{tool.id}</span>
+                <span className="tool-title-name">. {tool.name}</span>
+              </span>
               <span className="tool-summary">{tool.summary}</span>
             </Link>
           </li>

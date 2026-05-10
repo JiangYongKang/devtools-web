@@ -4,6 +4,7 @@ import { getToolById } from '../data/tools'
 
 const IMPLEMENTED_TOOLS = {
   '001': lazy(() => import('../components/TimestampConverter.jsx')),
+  '002': lazy(() => import('../components/JsonTool.jsx')),
 }
 
 function ToolContent({ toolId }) {

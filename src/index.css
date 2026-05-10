@@ -562,7 +562,8 @@ h2 {
   }
 }
 
-.json-tool {
+.json-tool,
+.xml-tool {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -582,7 +583,8 @@ h2 {
   color: var(--text-h);
 }
 
-.json-textarea {
+.json-textarea,
+.xml-textarea {
   width: 100%;
   min-height: 200px;
   padding: 0.75rem 0.85rem;
@@ -599,13 +601,15 @@ h2 {
     box-shadow 0.15s ease;
 }
 
-.json-textarea:focus {
+.json-textarea:focus,
+.xml-textarea:focus {
   outline: none;
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--accent-soft);
 }
 
-.json-textarea::placeholder {
+.json-textarea::placeholder,
+.xml-textarea::placeholder {
   color: var(--text-muted);
 }
 
@@ -643,6 +647,11 @@ h2 {
 
 .checkbox-group {
   justify-content: center;
+  align-self: stretch;
+}
+
+.form-row .form-group {
+  align-self: stretch;
 }
 
 .checkbox-group label {

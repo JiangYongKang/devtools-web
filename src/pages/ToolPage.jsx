@@ -6,6 +6,7 @@ const IMPLEMENTED_TOOLS = {
   '001': lazy(() => import('../components/TimestampConverter.jsx')),
   '002': lazy(() => import('../components/JsonTool.jsx')),
   '003': lazy(() => import('../components/XmlTool.jsx')),
+  '004': lazy(() => import('../components/UrlTool.jsx')),
 }
 
 function ToolContent({ toolId }) {

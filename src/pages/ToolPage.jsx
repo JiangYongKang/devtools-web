@@ -13,6 +13,16 @@ const IMPLEMENTED_TOOLS = {
   '008': lazy(() => import('../tools/regex/RegexTool.jsx')),
   '009': lazy(() => import('../tools/html/HtmlTool.jsx')),
   '010': lazy(() => import('../tools/css/CSSTool.jsx')),
+  '011': lazy(() => import('../tools/task011/JsTool.jsx')),
+  '012': lazy(() => import('../tools/task012/CronTool.jsx')),
+  '013': lazy(() => import('../tools/task013/ColorTool.jsx')),
+  '014': lazy(() => import('../tools/task014/JwtTool.jsx')),
+  '015': lazy(() => import('../tools/task015/QRTool.jsx')),
+  '016': lazy(() => import('../tools/task016/DiffTool.jsx')),
+  '017': lazy(() => import('../tools/markdown-safe-preview/MarkdownSafePreviewTool.jsx')),
+  '018': lazy(() => import('../tools/task018/SqlFormatterTool.jsx')),
+  '019': lazy(() => import('../tools/task019/YamlJsonTool.jsx')),
+  '020': lazy(() => import('../tools/base-radix-converter/BaseRadixConverterTool.jsx')),
 }
 
 function ToolContent({ toolId }) {

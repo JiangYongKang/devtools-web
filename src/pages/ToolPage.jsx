@@ -7,6 +7,12 @@ const IMPLEMENTED_TOOLS = {
   '002': lazy(() => import('../components/JsonTool.jsx')),
   '003': lazy(() => import('../components/XmlTool.jsx')),
   '004': lazy(() => import('../components/UrlTool.jsx')),
+  '005': lazy(() => import('../tools/base64/Base64Tool.jsx')),
+  '006': lazy(() => import('../tools/digest/DigestTool.jsx')),
+  '007': lazy(() => import('../tools/uuid/UUIDTool.jsx')),
+  '008': lazy(() => import('../tools/regex/RegexTool.jsx')),
+  '009': lazy(() => import('../tools/html/HtmlTool.jsx')),
+  '010': lazy(() => import('../tools/css/CSSTool.jsx')),
 }
 
 function ToolContent({ toolId }) {

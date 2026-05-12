@@ -1,0 +1,704 @@
+.symmetric-crypto-tool {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.symmetric-crypto-tool .security-warning-box {
+  padding: 0.75rem 0.875rem;
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.symmetric-crypto-tool .warning-icon {
+  font-size: 1.25rem;
+  color: #92400e;
+  flex-shrink: 0;
+}
+
+.symmetric-crypto-tool .warning-content {
+  flex: 1;
+}
+
+.symmetric-crypto-tool .warning-title {
+  display: block;
+  color: #92400e;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.symmetric-crypto-tool .warning-note {
+  margin: 0;
+  color: #92400e;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.symmetric-crypto-tool .crypto-textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 0.75rem 0.85rem;
+  font-size: 0.875rem;
+  font-family: var(--mono);
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  resize: vertical;
+  line-height: 1.6;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.symmetric-crypto-tool .crypto-textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.symmetric-crypto-tool .crypto-textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.symmetric-crypto-tool .sensitive-input {
+  position: relative;
+  flex: 1;
+}
+
+.symmetric-crypto-tool .sensitive-input .toggle-visibility {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.25rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.symmetric-crypto-tool .sensitive-input .toggle-visibility:hover {
+  color: var(--text);
+}
+
+.symmetric-crypto-tool .crypto-input {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  padding-right: 2.5rem;
+  font-size: 0.875rem;
+  font-family: var(--mono);
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+  box-sizing: border-box;
+}
+
+.symmetric-crypto-tool .crypto-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.symmetric-crypto-tool .crypto-input::placeholder {
+  color: var(--text-muted);
+}
+
+.symmetric-crypto-tool .algorithm-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.symmetric-crypto-tool .algorithm-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.15s ease;
+}
+
+.symmetric-crypto-tool .algorithm-item:hover {
+  background: var(--surface);
+}
+
+.symmetric-crypto-tool .algorithm-item.selected {
+  background: var(--accent-soft);
+}
+
+.symmetric-crypto-tool .algorithm-item input[type="radio"] {
+  margin-top: 0.15rem;
+  cursor: pointer;
+}
+
+.symmetric-crypto-tool .algo-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.symmetric-crypto-tool .algo-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.symmetric-crypto-tool .algo-name {
+  font-family: var(--mono);
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.symmetric-crypto-tool .algo-desc {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.symmetric-crypto-tool .algo-meta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.125rem;
+}
+
+.symmetric-crypto-tool .security-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.symmetric-crypto-tool .security-badge.strong {
+  color: #065f46;
+  background: #d1fae5;
+}
+
+.symmetric-crypto-tool .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--sans);
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.symmetric-crypto-tool .btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.symmetric-crypto-tool .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.symmetric-crypto-tool .btn-primary {
+  color: #fff;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.symmetric-crypto-tool .btn-primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+.symmetric-crypto-tool .btn-secondary {
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+.symmetric-crypto-tool .btn-secondary:hover:not(:disabled) {
+  background: var(--surface);
+  border-color: var(--accent);
+}
+
+.symmetric-crypto-tool .btn-ghost {
+  color: var(--text);
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.symmetric-crypto-tool .btn-ghost:hover:not(:disabled) {
+  background: var(--surface);
+}
+
+.symmetric-crypto-tool .btn-lg {
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+}
+
+.symmetric-crypto-tool .btn-md {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.symmetric-crypto-tool .btn-sm {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.8125rem;
+}
+
+.symmetric-crypto-tool .action-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.symmetric-crypto-tool .result-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.symmetric-crypto-tool .result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  gap: 0.5rem;
+}
+
+.symmetric-crypto-tool .result-label {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-h);
+}
+
+.symmetric-crypto-tool .result-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.symmetric-crypto-tool .result-text {
+  margin: 0;
+  padding: 0.75rem 0.875rem;
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  line-height: 1.8;
+  color: var(--text-h);
+  word-break: break-all;
+  white-space: pre-wrap;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.symmetric-crypto-tool .result-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg);
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.symmetric-crypto-tool .result-meta code {
+  font-family: var(--mono);
+  color: var(--text-h);
+  background: var(--surface);
+  padding: 0.125rem 0.375rem;
+  border-radius: 4px;
+}
+
+.symmetric-crypto-tool .error-box {
+  margin-top: 1rem;
+  padding: 0.75rem 0.875rem;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  color: #991b1b;
+}
+
+.symmetric-crypto-tool .error-box strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.symmetric-crypto-tool .error-box .error-code {
+  display: inline-block;
+  background: #fff;
+  padding: 0.125rem 0.5rem;
+  border-radius: 4px;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.symmetric-crypto-tool .error-box p {
+  margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.symmetric-crypto-tool .toast {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: slideIn 0.3s ease;
+}
+
+.symmetric-crypto-tool .toast.success {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.symmetric-crypto-tool .toast.error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.symmetric-crypto-tool .storage-warning-box {
+  margin-top: 1rem;
+  padding: 0.75rem 0.875rem;
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  color: #92400e;
+}
+
+.symmetric-crypto-tool .storage-warning-box strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.symmetric-crypto-tool .storage-warning-box p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.symmetric-crypto-tool .notes-section {
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.symmetric-crypto-tool .notes-section h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.symmetric-crypto-tool .notes-section ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.symmetric-crypto-tool .notes-section li {
+  margin-bottom: 0.5rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.symmetric-crypto-tool .notes-section li:last-child {
+  margin-bottom: 0;
+}
+
+.symmetric-crypto-tool .notes-section strong {
+  color: var(--text-h);
+}
+
+.symmetric-crypto-tool .form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.symmetric-crypto-tool .form-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.symmetric-crypto-tool .form-group.full-width {
+  flex: 1 1 100%;
+}
+
+.symmetric-crypto-tool .form-group label {
+  display: block;
+  margin-bottom: 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.symmetric-crypto-tool .form-group select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.symmetric-crypto-tool .form-group select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.symmetric-crypto-tool .form-row.with-top-gap {
+  margin-top: 1rem;
+}
+
+.symmetric-crypto-tool .input-with-generate {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.symmetric-crypto-tool .crypto-unavailable {
+  padding: 1.5rem;
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.symmetric-crypto-tool .crypto-unavailable h3 {
+  margin: 0 0 0.5rem 0;
+  color: #92400e;
+  font-size: 1rem;
+}
+
+.symmetric-crypto-tool .crypto-unavailable p {
+  margin: 0;
+  color: #92400e;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.symmetric-crypto-tool .checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.8125rem;
+}
+
+.symmetric-crypto-tool .checkbox-group input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.symmetric-crypto-tool .checkbox-group label {
+  margin: 0;
+  font-weight: normal;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.symmetric-crypto-tool .operation-mode-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.symmetric-crypto-tool .operation-mode-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.symmetric-crypto-tool .mode-switch {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.symmetric-crypto-tool .mode-segment {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  font-family: var(--sans);
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.symmetric-crypto-tool .mode-segment:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.symmetric-crypto-tool .mode-segment:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.symmetric-crypto-tool .mode-segment:hover:not(:disabled) {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.symmetric-crypto-tool .mode-segment.active {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.symmetric-crypto-tool .text-count {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.symmetric-crypto-tool .text-count.over-limit {
+  color: #991b1b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .symmetric-crypto-tool .security-warning-box {
+    background: #78350f;
+    border-color: #92400e;
+    color: #fef3c7;
+  }
+
+  .symmetric-crypto-tool .warning-icon {
+    color: #fef3c7;
+  }
+
+  .symmetric-crypto-tool .warning-title,
+  .symmetric-crypto-tool .warning-note {
+    color: #fef3c7;
+  }
+
+  .symmetric-crypto-tool .security-badge.strong {
+    color: #a7f3d0;
+    background: #064e3b;
+  }
+
+  .symmetric-crypto-tool .error-box {
+    background: #7f1d1d;
+    border-color: #991b1b;
+    color: #fecaca;
+  }
+
+  .symmetric-crypto-tool .error-box .error-code {
+    background: #991b1b;
+  }
+
+  .symmetric-crypto-tool .toast.success {
+    background: #064e3b;
+    color: #a7f3d0;
+    border-color: #065f46;
+  }
+
+  .symmetric-crypto-tool .toast.error {
+    background: #7f1d1d;
+    color: #fecaca;
+    border-color: #991b1b;
+  }
+
+  .symmetric-crypto-tool .storage-warning-box {
+    background: #78350f;
+    border-color: #92400e;
+    color: #fef3c7;
+  }
+
+  .symmetric-crypto-tool .crypto-unavailable {
+    background: #78350f;
+    border-color: #92400e;
+  }
+
+  .symmetric-crypto-tool .crypto-unavailable h3,
+  .symmetric-crypto-tool .crypto-unavailable p {
+    color: #fef3c7;
+  }
+}
+
+@media (max-width: 640px) {
+  .symmetric-crypto-tool .form-row {
+    flex-direction: column;
+  }
+
+  .symmetric-crypto-tool .form-group {
+    min-width: 100%;
+  }
+
+  .symmetric-crypto-tool .input-with-generate {
+    flex-direction: column;
+  }
+
+  .symmetric-crypto-tool .input-with-generate .btn {
+    align-self: flex-start;
+  }
+
+  .symmetric-crypto-tool .result-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .symmetric-crypto-tool .result-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .symmetric-crypto-tool .operation-mode-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

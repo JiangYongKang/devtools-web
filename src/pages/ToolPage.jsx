@@ -33,6 +33,16 @@ const IMPLEMENTED_TOOLS = {
   '028': lazy(() => import('../tools/websocket-playground/WebSocketPlaygroundTool.jsx')),
   '029': lazy(() => import('../tools/webhook-debug-receiver/WebhookDebugReceiver.jsx')),
   '030': lazy(() => import('../tools/graphql-query-formatter/GraphQLQueryFormatterTool.jsx')),
+  '031': lazy(() => import('../tools/hex-text-converter/HexTextConverterTool.jsx')),
+  '032': lazy(() => import('../tools/pem-certificate-viewer/PemCertificateViewerTool.jsx')),
+  '033': lazy(() => import('../tools/symmetric-crypto-demo/SymmetricCryptoDemoTool.jsx')),
+  '034': lazy(() => import('../tools/password-generator/PasswordGeneratorTool.jsx')),
+  '035': lazy(() => import('../tools/lorem-ipsum-generator/LoremIpsumGeneratorTool.jsx')),
+  '036': lazy(() => import('../tools/log-field-extractor/LogFieldExtractorTool.jsx')),
+  '037': lazy(() => import('../tools/csv-table-transform/CsvTableTransformTool.jsx')),
+  '038': lazy(() => import('../tools/json-syntax-check/JsonSyntaxCheckTool.jsx')),
+  '039': lazy(() => import('../tools/env-key-parser/EnvKeyParserTool.jsx')),
+  '040': lazy(() => import('../tools/gitignore-pattern-explainer/GitignorePatternExplainerTool.jsx')),
 }
 
 function ToolContent({ toolId }) {

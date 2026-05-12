@@ -1,0 +1,35 @@
+const ERROR_CODES = {
+  INVALID_GENERATION_MODE: 'INVALID_GENERATION_MODE',
+  INVALID_SEPARATION_MODE: 'INVALID_SEPARATION_MODE',
+  PARAGRAPH_COUNT_OUT_OF_RANGE: 'PARAGRAPH_COUNT_OUT_OF_RANGE',
+  WORDS_PER_PARAGRAPH_OUT_OF_RANGE: 'WORDS_PER_PARAGRAPH_OUT_OF_RANGE',
+  TOTAL_WORDS_OUT_OF_RANGE: 'TOTAL_WORDS_OUT_OF_RANGE',
+  PRODUCT_EXCEEDS_LIMIT: 'PRODUCT_EXCEEDS_LIMIT',
+  INVALID_SEED: 'INVALID_SEED',
+}
+
+const ERROR_MESSAGES = {
+  [ERROR_CODES.INVALID_GENERATION_MODE]: '无效的生成模式，请选择「按段落数」或「按总字数」',
+  [ERROR_CODES.INVALID_SEPARATION_MODE]: '无效的段落分隔模式',
+  [ERROR_CODES.PARAGRAPH_COUNT_OUT_OF_RANGE]: `段落数必须在 1-200 之间`,
+  [ERROR_CODES.WORDS_PER_PARAGRAPH_OUT_OF_RANGE]: `单段词数必须在 1-1000 之间`,
+  [ERROR_CODES.TOTAL_WORDS_OUT_OF_RANGE]: `总词数必须在 1-50000 之间`,
+  [ERROR_CODES.PRODUCT_EXCEEDS_LIMIT]: `段落数 × 单段词数 超过上限 50000，请减少参数`,
+  [ERROR_CODES.INVALID_SEED]: '种子值必须是有效数字',
+}
+
+function createError(code, details = null) {
+  const message = ERROR_MESSAGES[code] || '未知错误'
+  const err = new Error(message)
+  err.code = code
+  if (details) {
+    err.details = details
+  }
+  return err
+}
+
+export {
+  ERROR_CODES,
+  ERROR_MESSAGES,
+  createError,
+}

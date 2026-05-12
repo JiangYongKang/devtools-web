@@ -1,4 +1,4 @@
-/** 当前已落地的工具条目（001～030），与 ToolPage 实现一致 */
+/** 当前已落地的工具条目（001～040），与 ToolPage 实现一致 */
 export const tools = [
   {
     id: '001',
@@ -150,6 +150,56 @@ export const tools = [
     id: '030',
     name: 'GraphQL 排版',
     summary: 'GraphQL 查询字符串的缩进排版',
+  },
+  {
+    id: '031',
+    name: '十六进制与文本互转',
+    summary: '十六进制串与可打印文本互转（分隔符、编码与错误提示）',
+  },
+  {
+    id: '032',
+    name: 'PEM 证书摘要',
+    summary: 'PEM 格式证书的字段摘要展示（浏览器内解析）',
+  },
+  {
+    id: '033',
+    name: '对称加密演示',
+    summary: '对称密钥语境下的短文本加解密演示（浏览器侧与风险提示）',
+  },
+  {
+    id: '034',
+    name: '强口令生成',
+    summary: '按规则生成随机强口令',
+  },
+  {
+    id: '035',
+    name: '占位假文生成',
+    summary: '占位假文按段落或字数生成',
+  },
+  {
+    id: '036',
+    name: '日志字段抽取',
+    summary: '日志样本文本的级别与时间字段抽取展示',
+  },
+  {
+    id: '037',
+    name: 'CSV 与表格互转',
+    summary: 'CSV 与表格形文本的行列互转',
+  },
+  {
+    id: '038',
+    name: 'JSON 语法校验',
+    summary: '粘贴 JSON 时的语法校验与错误定位',
+  },
+  {
+    id: '039',
+    name: '.env 解析',
+    summary: '.env 风格键值行的解析与重复键提示',
+  },
+  {
+    id: '040',
+    name: '.gitignore 规则说明',
+    summary: '.gitignore 风格通配模式的含义说明',
   },
 ]
 

@@ -1,0 +1,794 @@
+.gitignore-explainer-tool {
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #1f2937;
+}
+
+.gitignore-explainer-tool .tool-section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.gitignore-explainer-tool h2 {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.gitignore-explainer-tool h3 {
+  margin: 0 0 12px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.gitignore-explainer-tool .form-group {
+  margin-bottom: 16px;
+}
+
+.gitignore-explainer-tool .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.gitignore-explainer-tool .form-group.full-width textarea {
+  width: 100%;
+  min-height: 140px;
+  padding: 12px 14px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  resize: vertical;
+  box-sizing: border-box;
+  background: #fafafa;
+  color: #1f2937;
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.gitignore-explainer-tool .form-group.full-width textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+.gitignore-explainer-tool .input-stats {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.gitignore-explainer-tool .options-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+  padding: 12px 14px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.gitignore-explainer-tool .option-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #4b5563;
+  cursor: pointer;
+  user-select: none;
+}
+
+.gitignore-explainer-tool .option-item input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #3b82f6;
+}
+
+.gitignore-explainer-tool .action-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.gitignore-explainer-tool .action-row .primary-btn,
+.gitignore-explainer-tool .action-row .secondary-btn {
+  padding: 9px 18px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  border: 1.5px solid transparent;
+}
+
+.gitignore-explainer-tool .primary-btn {
+  background: #3b82f6;
+  color: #ffffff;
+  border-color: #3b82f6;
+}
+
+.gitignore-explainer-tool .primary-btn:hover:not(:disabled) {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.gitignore-explainer-tool .primary-btn:active:not(:disabled) {
+  transform: translateY(0.5px);
+}
+
+.gitignore-explainer-tool .primary-btn:disabled {
+  background: #d1d5db;
+  border-color: #d1d5db;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.gitignore-explainer-tool .secondary-btn {
+  background: #ffffff;
+  color: #4b5563;
+  border-color: #d1d5db;
+}
+
+.gitignore-explainer-tool .secondary-btn:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+  color: #1f2937;
+}
+
+.gitignore-explainer-tool .secondary-btn:active {
+  transform: translateY(0.5px);
+  background: #f3f4f6;
+}
+
+.gitignore-explainer-tool .examples-section {
+  margin-bottom: 4px;
+}
+
+.gitignore-explainer-tool .examples-section h3 {
+  margin-bottom: 10px;
+}
+
+.gitignore-explainer-tool .examples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 8px;
+}
+
+.gitignore-explainer-tool .example-btn {
+  padding: 10px 12px;
+  background: #ffffff;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4b5563;
+  transition: all 0.18s ease;
+}
+
+.gitignore-explainer-tool .example-btn:hover {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1d4ed8;
+}
+
+.gitignore-explainer-tool .example-btn:active {
+  background: #dbeafe;
+  border-color: #93c5fd;
+  transform: translateY(0.5px);
+}
+
+.gitignore-explainer-tool .error-box {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+}
+
+.gitignore-explainer-tool .error-box strong {
+  color: #b91c1c;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.gitignore-explainer-tool .error-box p {
+  margin: 0;
+  color: #dc2626;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.gitignore-explainer-tool .error-code {
+  margin-top: 10px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  color: #991b1b;
+  background: rgba(220, 38, 38, 0.08);
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.gitignore-explainer-tool .summary-section {
+  margin-bottom: 20px;
+  padding: 18px 20px;
+  background: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.gitignore-explainer-tool .summary-section h3 {
+  color: #374151;
+}
+
+.gitignore-explainer-tool .summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.gitignore-explainer-tool .summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+}
+
+.gitignore-explainer-tool .summary-label {
+  font-size: 11px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.gitignore-explainer-tool .summary-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.gitignore-explainer-tool .warnings-box {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: #92400e;
+}
+
+.gitignore-explainer-tool .warnings-box strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.gitignore-explainer-tool .warnings-box ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.gitignore-explainer-tool .warnings-box li {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 2px;
+}
+
+.gitignore-explainer-tool .warnings-box li:last-child {
+  margin-bottom: 0;
+}
+
+.gitignore-explainer-tool .explanations-section {
+  margin-bottom: 20px;
+}
+
+.gitignore-explainer-tool .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.gitignore-explainer-tool .section-header h3 {
+  margin: 0;
+}
+
+.gitignore-explainer-tool .action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.gitignore-explainer-tool .copy-btn {
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  background: #10b981;
+  color: #ffffff;
+  border: 1.5px solid #10b981;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.gitignore-explainer-tool .copy-btn:hover {
+  background: #059669;
+  border-color: #059669;
+}
+
+.gitignore-explainer-tool .copy-btn:active {
+  transform: translateY(0.5px);
+}
+
+.gitignore-explainer-tool .pattern-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gitignore-explainer-tool .pattern-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.gitignore-explainer-tool .pattern-item:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.gitignore-explainer-tool .pattern-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  flex-wrap: wrap;
+}
+
+.gitignore-explainer-tool .pattern-number {
+  font-size: 11px;
+  color: #9ca3af;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.gitignore-explainer-tool .pattern-badge {
+  padding: 3px 9px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.gitignore-explainer-tool .pattern-badge.type-file {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.gitignore-explainer-tool .pattern-badge.type-directory {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.gitignore-explainer-tool .pattern-badge.type-negation {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.gitignore-explainer-tool .pattern-badge.type-comment {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.gitignore-explainer-tool .pattern-badge.type-empty {
+  background: #f3f4f6;
+  color: #9ca3af;
+}
+
+.gitignore-explainer-tool .pattern-text {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  color: #1f2937;
+  background: #ffffff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+.gitignore-explainer-tool .pattern-body {
+  padding: 14px 16px;
+}
+
+.gitignore-explainer-tool .pattern-summary {
+  font-size: 14px;
+  color: #111827;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.gitignore-explainer-tool .pattern-details {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0 0 12px 0;
+  line-height: 1.6;
+}
+
+.gitignore-explainer-tool .pattern-segments {
+  margin-top: 14px;
+}
+
+.gitignore-explainer-tool .pattern-segments h4 {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.gitignore-explainer-tool .segments-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gitignore-explainer-tool .segment-item {
+  display: flex;
+  gap: 12px;
+  padding: 10px 12px;
+  background: #fafafa;
+  border-radius: 8px;
+  align-items: flex-start;
+  border: 1px solid #f3f4f6;
+}
+
+.gitignore-explainer-tool .segment-symbol {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2563eb;
+  background: #ffffff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.gitignore-explainer-tool .segment-info {
+  flex: 1;
+}
+
+.gitignore-explainer-tool .segment-explanation {
+  font-size: 13px;
+  color: #374151;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.gitignore-explainer-tool .segment-examples {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.gitignore-explainer-tool .segment-examples li {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.gitignore-explainer-tool .pattern-warnings {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gitignore-explainer-tool .warning-item {
+  font-size: 13px;
+  color: #92400e;
+  background: #fffbeb;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #fde68a;
+}
+
+.gitignore-explainer-tool .matching-section {
+  margin-bottom: 20px;
+  padding: 18px 20px;
+  background: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.gitignore-explainer-tool .matching-disclaimer {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: #fffbeb;
+  border-radius: 6px;
+  border: 1px solid #fde68a;
+  line-height: 1.5;
+}
+
+.gitignore-explainer-tool .matching-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gitignore-explainer-tool .matching-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.gitignore-explainer-tool .matching-item.ignored {
+  border-color: #fecaca;
+}
+
+.gitignore-explainer-tool .matching-item.not-ignored {
+  border-color: #bbf7d0;
+}
+
+.gitignore-explainer-tool .matching-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+}
+
+.gitignore-explainer-tool .matching-item.ignored .matching-header {
+  background: #fef2f2;
+}
+
+.gitignore-explainer-tool .matching-item.not-ignored .matching-header {
+  background: #f0fdf4;
+}
+
+.gitignore-explainer-tool .matching-badge {
+  padding: 3px 9px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.gitignore-explainer-tool .matching-badge.ignored {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.gitignore-explainer-tool .matching-badge.not-ignored {
+  background: #22c55e;
+  color: #ffffff;
+}
+
+.gitignore-explainer-tool .matching-path {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  color: #1f2937;
+}
+
+.gitignore-explainer-tool .matching-details {
+  padding: 10px 14px;
+  background: #fafafa;
+  border-top: 1px solid #f3f4f6;
+}
+
+.gitignore-explainer-tool .matching-rule {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.gitignore-explainer-tool .matching-rule:last-child {
+  margin-bottom: 0;
+}
+
+.gitignore-explainer-tool .matching-rule-type {
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.gitignore-explainer-tool .matching-rule-type:not(.negation) {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.gitignore-explainer-tool .matching-rule-type.negation {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.gitignore-explainer-tool .subset-section {
+  margin-bottom: 20px;
+  padding: 18px 20px;
+  background: #f9fafb;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.gitignore-explainer-tool .subset-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .gitignore-explainer-tool .subset-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gitignore-explainer-tool .subset-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.gitignore-explainer-tool .subset-column h4 {
+  font-size: 13px;
+  color: #374151;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.gitignore-explainer-tool .subset-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.gitignore-explainer-tool .subset-table th,
+.gitignore-explainer-tool .subset-table td {
+  border: 1px solid #e5e7eb;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.gitignore-explainer-tool .subset-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+  color: #4b5563;
+  font-size: 12px;
+}
+
+.gitignore-explainer-tool .subset-table td {
+  background: #ffffff;
+  color: #374151;
+}
+
+.gitignore-explainer-tool .subset-table code {
+  background: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  color: #2563eb;
+}
+
+.gitignore-explainer-tool .not-supported-list {
+  margin: 0;
+  padding-left: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px 12px 12px 28px;
+}
+
+.gitignore-explainer-tool .not-supported-list li {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.gitignore-explainer-tool .not-supported-list li:last-child {
+  margin-bottom: 0;
+}
+
+.gitignore-explainer-tool .disclaimer {
+  margin-top: 20px;
+  padding: 16px 18px;
+  background: #fefce8;
+  border: 1px solid #fde68a;
+  border-radius: 10px;
+  color: #854d0e;
+}
+
+.gitignore-explainer-tool .disclaimer h4 {
+  margin: 0 0 8px 0;
+  color: #713f12;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.gitignore-explainer-tool .disclaimer p {
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.gitignore-explainer-tool .disclaimer ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.gitignore-explainer-tool .disclaimer li {
+  font-size: 13px;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.gitignore-explainer-tool .disclaimer li:last-child {
+  margin-bottom: 0;
+}
+
+.gitignore-explainer-tool .disclaimer code {
+  background: rgba(0, 0, 0, 0.04);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  color: #713f12;
+}
+
+.gitignore-explainer-tool .tool-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  z-index: 1000;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  animation: toolToastFade 2.5s ease-in-out;
+  max-width: 90vw;
+  white-space: nowrap;
+}
+
+.gitignore-explainer-tool .tool-toast.success {
+  background: #059669;
+}
+
+.gitignore-explainer-tool .tool-toast.error {
+  background: #dc2626;
+}
+
+@keyframes toolToastFade {
+  0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+  10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  90% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+}

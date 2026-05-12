@@ -23,6 +23,16 @@ const IMPLEMENTED_TOOLS = {
   '018': lazy(() => import('../tools/task018/SqlFormatterTool.jsx')),
   '019': lazy(() => import('../tools/task019/YamlJsonTool.jsx')),
   '020': lazy(() => import('../tools/base-radix-converter/BaseRadixConverterTool.jsx')),
+  '021': lazy(() => import('../tools/shell-escape-reference/ShellEscapeReferenceTool.jsx')),
+  '022': lazy(() => import('../tools/unicode-codepoint-explorer/UnicodeCodepointExplorerTool.jsx')),
+  '023': lazy(() => import('../tools/string-metrics-counter/StringMetricsCounterTool.jsx')),
+  '024': lazy(() => import('../tools/ipv4-subnet-calculator/IPv4SubnetCalculatorTool.jsx')),
+  '025': lazy(() => import('../tools/cidr-range-parser/CIDRRangeParserTool.jsx')),
+  '026': lazy(() => import('../tools/user-agent-inspector/UserAgentInspectorTool.jsx')),
+  '027': lazy(() => import('../tools/http-request-playground/HttpRequestPlaygroundTool.jsx')),
+  '028': lazy(() => import('../tools/websocket-playground/WebSocketPlaygroundTool.jsx')),
+  '029': lazy(() => import('../tools/webhook-debug-receiver/WebhookDebugReceiver.jsx')),
+  '030': lazy(() => import('../tools/graphql-query-formatter/GraphQLQueryFormatterTool.jsx')),
 }
 
 function ToolContent({ toolId }) {

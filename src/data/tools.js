@@ -1,4 +1,4 @@
-/** 与 features/FEATURE.md 中 001～050 工具条目对应 */
+/** 当前已落地的工具条目（001～030），与 ToolPage 实现一致 */
 export const tools = [
   {
     id: '001',
@@ -150,106 +150,6 @@ export const tools = [
     id: '030',
     name: 'GraphQL 排版',
     summary: 'GraphQL 查询字符串的缩进排版',
-  },
-  {
-    id: '031',
-    name: '十六进制与文本',
-    summary: '十六进制串与可打印文本互转',
-  },
-  {
-    id: '032',
-    name: 'PEM 证书摘要',
-    summary: 'PEM 格式证书的字段摘要展示',
-  },
-  {
-    id: '033',
-    name: '对称加解密演示',
-    summary: '对称密钥语境下的短文本加解密演示入口（仅浏览器侧演示与风险提示）',
-  },
-  {
-    id: '034',
-    name: '随机强口令',
-    summary: '按规则生成随机强口令',
-  },
-  {
-    id: '035',
-    name: '占位假文生成',
-    summary: '占位假文按段落或字数生成',
-  },
-  {
-    id: '036',
-    name: '日志字段抽取',
-    summary: '日志样本文本的级别与时间字段抽取展示',
-  },
-  {
-    id: '037',
-    name: 'CSV 行列互转',
-    summary: 'CSV 与表格形文本的行列互转',
-  },
-  {
-    id: '038',
-    name: 'JSON 语法校验',
-    summary: '粘贴 JSON 时的语法校验与错误定位',
-  },
-  {
-    id: '039',
-    name: '.env 解析',
-    summary: '.env 风格键值行的解析与重复键提示',
-  },
-  {
-    id: '040',
-    name: '.gitignore 说明',
-    summary: '.gitignore 风格通配模式的含义说明',
-  },
-  {
-    id: '041',
-    name: '语义化版本',
-    summary: '语义化版本号的比较与排序',
-  },
-  {
-    id: '042',
-    name: '变更说明草稿',
-    summary: '变更说明条目按模板生成草稿',
-  },
-  {
-    id: '043',
-    name: 'URL 路径拼接',
-    summary: '多段 URL 或路径片段的安全拼接与规范化',
-  },
-  {
-    id: '044',
-    name: 'Punycode 互转',
-    summary: '国际化域名与 Punycode 互转',
-  },
-  {
-    id: '045',
-    name: '扩展名与 MIME',
-    summary: '扩展名与 MIME 类型对照查询',
-  },
-  {
-    id: '046',
-    name: '标识符命名风格',
-    summary: '标识符在 camelCase、snake_case、PascalCase 间转换',
-  },
-  {
-    id: '047',
-    name: '跨平台路径',
-    summary: '跨平台文件路径的规范化与分隔符展示',
-  },
-  {
-    id: '048',
-    name: '指数退避推算',
-    summary: '指数退避重试的间隔序列推算',
-  },
-  {
-    id: '049',
-    name: 'REST Mock 草稿',
-    summary: 'REST 接口 Mock 响应规则的配置草稿（可与本地 mock 服务或静态场景结合）',
-  },
-  {
-    id: '050',
-    name: '数据单位换算',
-    summary: '常用数据单位与字节数换算',
   },
 ]
 

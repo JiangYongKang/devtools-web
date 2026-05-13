@@ -1,4 +1,4 @@
-/** 当前已落地的工具条目（001～040），与 ToolPage 实现一致 */
+/** 当前已落地的工具条目（001～050），与 ToolPage 实现一致 */
 export const tools = [
   {
     id: '001',
@@ -200,6 +200,57 @@ export const tools = [
     id: '040',
     name: '.gitignore 规则说明',
     summary: '.gitignore 风格通配模式的含义说明',
+  },
+  {
+    id: '041',
+    name: 'SemVer 比较与排序',
+    summary:
+      '语义化版本号的解析、两两比较、多版本稳定排序、范围算子与导出（纯浏览器）',
+  },
+  {
+    id: '042',
+    name: '变更说明草稿',
+    summary: '变更说明条目按模板生成草稿（多模板、占位符与条目编排）',
+  },
+  {
+    id: '043',
+    name: '安全 URL / 路径拼接',
+    summary: '多段 URL 或路径片段的安全拼接与规范化（含批量与诊断）',
+  },
+  {
+    id: '044',
+    name: 'IDN 与 Punycode',
+    summary: '国际化域名与 Punycode 互转、批量处理与浏览器能力说明（纯前端）',
+  },
+  {
+    id: '045',
+    name: '扩展名与 MIME',
+    summary: '扩展名与 MIME 类型对照查询（含本地表与可选魔数辅助）',
+  },
+  {
+    id: '046',
+    name: '标识符风格转换',
+    summary: '标识符在 camelCase、snake_case、PascalCase 等风格间转换',
+  },
+  {
+    id: '047',
+    name: '路径规范化',
+    summary: '跨平台文件路径的规范化与分隔符展示（字符串级、不访问真实文件系统）',
+  },
+  {
+    id: '048',
+    name: '指数退避推算',
+    summary: '指数退避重试的间隔序列推算、抖动与导出（纯前端）',
+  },
+  {
+    id: '049',
+    name: 'REST Mock 规则草稿',
+    summary: 'REST 接口 Mock 响应规则的配置草稿编辑与校验（不自动请求外网）',
+  },
+  {
+    id: '050',
+    name: '数据单位换算',
+    summary: '常用数据单位与字节数换算（IEC/SI、批量与格式化）',
   },
 ]
 

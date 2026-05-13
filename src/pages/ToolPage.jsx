@@ -43,6 +43,16 @@ const IMPLEMENTED_TOOLS = {
   '038': lazy(() => import('../tools/json-syntax-check/JsonSyntaxCheckTool.jsx')),
   '039': lazy(() => import('../tools/env-key-parser/EnvKeyParserTool.jsx')),
   '040': lazy(() => import('../tools/gitignore-pattern-explainer/GitignorePatternExplainerTool.jsx')),
+  '041': lazy(() => import('../tools/semver-compare-sort/SemverCompareSortTool.jsx')),
+  '042': lazy(() => import('../tools/changelog-draft-builder/ChangelogDraftBuilderTool.jsx')),
+  '043': lazy(() => import('../tools/safe-url-path-joiner/SafeUrlPathJoinerTool.jsx')),
+  '044': lazy(() => import('../tools/idn-punycode-converter/IdnPunycodeConverterTool.jsx')),
+  '045': lazy(() => import('../tools/extension-mime-lookup/ExtensionMimeLookupTool.jsx')),
+  '046': lazy(() => import('../tools/identifier-case-converter/IdentifierCaseConverterTool.jsx')),
+  '047': lazy(() => import('../tools/filepath-normalizer/FilepathNormalizerTool.jsx')),
+  '048': lazy(() => import('../tools/exponential-backoff-calculator/ExponentialBackoffCalculatorTool.jsx')),
+  '049': lazy(() => import('../tools/rest-mock-rules-draft/RestMockRulesDraftTool.jsx')),
+  '050': lazy(() => import('../tools/data-unit-converter/DataUnitConverterTool.jsx')),
 }
 
 function ToolContent({ toolId }) {

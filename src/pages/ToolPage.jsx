@@ -53,6 +53,16 @@ const IMPLEMENTED_TOOLS = {
   '048': lazy(() => import('../tools/exponential-backoff-calculator/ExponentialBackoffCalculatorTool.jsx')),
   '049': lazy(() => import('../tools/rest-mock-rules-draft/RestMockRulesDraftTool.jsx')),
   '050': lazy(() => import('../tools/data-unit-converter/DataUnitConverterTool.jsx')),
+  '051': lazy(() => import('../platform/app-shell/AppShellDemo.jsx')),
+  '052': lazy(() => import('../platform/tool-workbench/ToolWorkbench.jsx')),
+  '053': lazy(() => import('../platform/theme-system/ThemeSystem.jsx')),
+  '054': lazy(() => import('../platform/preference-persistence/PreferencePersistenceDemo.jsx')),
+  '055': lazy(() => import('../platform/clipboard-bridge/ClipboardBridgeTool.jsx')),
+  '056': lazy(() => import('../tools/download-helper/DownloadHelperTool.jsx')),
+  '057': lazy(() => import('../platform/http-client/HttpClientDemo.jsx')),
+  '058': lazy(() => import('../platform/feedback-ui/FeedbackUITool.jsx')),
+  '059': lazy(() => import('../platform/error-recovery/ErrorRecoveryDemo.jsx')),
+  '060': lazy(() => import('../platform/route-sync/RouteSyncDemo.jsx')),
 }
 
 function ToolContent({ toolId }) {

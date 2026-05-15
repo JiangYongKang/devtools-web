@@ -1,0 +1,446 @@
+.upload-magic-gate {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  color: #333;
+}
+
+.upload-magic-gate__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #1a1a2e;
+}
+
+.upload-magic-gate__dropzone {
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 48px 24px;
+  text-align: center;
+  background: #f8fafc;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.upload-magic-gate__dropzone:hover {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.upload-magic-gate__dropzone--dragging {
+  border-color: #3b82f6;
+  background: #dbeafe;
+  transform: scale(1.01);
+}
+
+.upload-magic-gate__dropzone-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.upload-magic-gate__dropzone-text {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.upload-magic-gate__dropzone-hint {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.upload-magic-gate__file-input {
+  display: none;
+}
+
+.upload-magic-gate__actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.upload-magic-gate__btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.upload-magic-gate__btn--primary {
+  background: #3b82f6;
+  color: white;
+}
+
+.upload-magic-gate__btn--primary:hover {
+  background: #2563eb;
+}
+
+.upload-magic-gate__btn--secondary {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+.upload-magic-gate__btn--secondary:hover {
+  background: #e2e8f0;
+}
+
+.upload-magic-gate__btn--danger {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.upload-magic-gate__btn--danger:hover {
+  background: #fecaca;
+}
+
+.upload-magic-gate__btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.upload-magic-gate__file-list {
+  margin-top: 24px;
+}
+
+.upload-magic-gate__file-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.upload-magic-gate__file-list-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.upload-magic-gate__file-list-stats {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.upload-magic-gate__file-item {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.upload-magic-gate__file-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.upload-magic-gate__file-item-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 12px;
+}
+
+.upload-magic-gate__file-icon {
+  font-size: 24px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-magic-gate__file-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.upload-magic-gate__file-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e293b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.upload-magic-gate__file-meta {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.upload-magic-gate__file-status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.upload-magic-gate__file-status-badge--passed {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.upload-magic-gate__file-status-badge--failed {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.upload-magic-gate__file-status-badge--warning {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.upload-magic-gate__file-status-badge--validating {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.upload-magic-gate__file-status-badge--pending {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.upload-magic-gate__file-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.upload-magic-gate__file-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: none;
+  background: #f1f5f9;
+  color: #64748b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.upload-magic-gate__file-btn:hover {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.upload-magic-gate__file-btn--danger:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.upload-magic-gate__file-details {
+  padding: 0 16px 16px;
+  border-top: 1px solid #f1f5f9;
+  background: #fafbfc;
+}
+
+.upload-magic-gate__file-detail-section {
+  margin-top: 12px;
+}
+
+.upload-magic-gate__file-detail-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+.upload-magic-gate__issues-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.upload-magic-gate__issue-item {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.upload-magic-gate__issue-item--error {
+  background: #fef2f2;
+  border-left: 3px solid #ef4444;
+  color: #991b1b;
+}
+
+.upload-magic-gate__issue-item--warning {
+  background: #fffbeb;
+  border-left: 3px solid #f59e0b;
+  color: #92400e;
+}
+
+.upload-magic-gate__issue-item--info {
+  background: #eff6ff;
+  border-left: 3px solid #3b82f6;
+  color: #1e40af;
+}
+
+.upload-magic-gate__issue-message {
+  font-weight: 500;
+}
+
+.upload-magic-gate__issue-hint {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.upload-magic-gate__hex-preview {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  overflow-x: auto;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.upload-magic-gate__hex-row {
+  display: flex;
+  gap: 8px;
+}
+
+.upload-magic-gate__hex-offset {
+  color: #64748b;
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.upload-magic-gate__hex-bytes {
+  color: #38bdf8;
+  letter-spacing: 2px;
+  flex: 1;
+}
+
+.upload-magic-gate__hex-ascii {
+  color: #a3e635;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.upload-magic-gate__summary-banner {
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.upload-magic-gate__summary-banner--success {
+  background: #dcfce7;
+  border: 1px solid #86efac;
+  color: #166534;
+}
+
+.upload-magic-gate__summary-banner--warning {
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  color: #92400e;
+}
+
+.upload-magic-gate__summary-banner--error {
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  color: #991b1b;
+}
+
+.upload-magic-gate__summary-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.upload-magic-gate__summary-text {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.upload-magic-gate__demo-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #e2e8f0;
+  flex-wrap: wrap;
+}
+
+.upload-magic-gate__demo-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #e2e8f0;
+  background: white;
+  color: #475569;
+  transition: all 0.2s ease;
+}
+
+.upload-magic-gate__demo-btn:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.upload-magic-gate__demo-btn-icon {
+  font-size: 18px;
+}
+
+.upload-magic-gate__empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  color: #94a3b8;
+}
+
+.upload-magic-gate__empty-state-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.upload-magic-gate__empty-state-text {
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .upload-magic-gate {
+    padding: 16px;
+  }
+
+  .upload-magic-gate__file-item-header {
+    flex-wrap: wrap;
+  }
+
+  .upload-magic-gate__file-info {
+    width: 100%;
+    order: 1;
+  }
+
+  .upload-magic-gate__file-actions {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .upload-magic-gate__demo-buttons {
+    flex-direction: column;
+  }
+
+  .upload-magic-gate__demo-btn {
+    justify-content: center;
+  }
+}

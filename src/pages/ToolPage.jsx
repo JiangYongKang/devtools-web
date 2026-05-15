@@ -73,6 +73,44 @@ const IMPLEMENTED_TOOLS = {
   '068': lazy(() => import('../platform/i18n-kit/I18nKitDemo.jsx')),
   '069': lazy(() => import('../platform/safe-rich-text/SafeRichTextDemo.jsx')),
   '070': lazy(() => import('../platform/sensitive-input-mask/SensitiveInputMask.jsx')),
+  '071': lazy(() => import('../platform/web-crypto-capability-matrix/WebCryptoCapabilityMatrix.jsx')),
+  '072': lazy(() => import('../platform/oauth-oidc-browser-shell/OAuthOidcBrowserShell.jsx')),
+  '073': lazy(() => import('../platform/webhook-signature-playbook/WebhookSignaturePlaybook.jsx')),
+  '074': lazy(() => import('../platform/tabular-import-diagnostics/TabularImportDiagnosticsTool.jsx')),
+  '075': lazy(() => import('../platform/chunked-download-orchestrator/ChunkedDownloadOrchestratorDemo.jsx')),
+  '076': lazy(() => import('../platform/tool-usage-metadata-hub/ToolUsageMetadataHubDemo.jsx')),
+  '077': lazy(() => import('../platform/optimistic-sync-conflict-ui/OptimisticSyncDemo.jsx')),
+  '078': lazy(() => import('../platform/cross-panel-event-bus/CrossPanelEventBusDemo.jsx')),
+  '079': lazy(() => import('../platform/fuzzy-text-filter-highlight/FuzzySearchDemo.jsx')),
+  '080': lazy(() => import('../platform/upload-magic-byte-gate/UploadMagicByteGate.jsx')),
+  '081': lazy(() =>
+    import('../platform/image-preview-watermark-workbench/ImagePreviewWatermarkWorkbench.jsx'),
+  ),
+  '082': lazy(() =>
+    import('../platform/share-link-renderer-playbook/ShareLinkRendererPlaybook.jsx'),
+  ),
+  '083': lazy(() =>
+    import('../platform/templated-notification-preview/TemplatedNotificationPreview.jsx'),
+  ),
+  '084': lazy(() => import('../platform/otp-sms-rate-limit-ui/OtpSmsRateLimitDemo.jsx')),
+  '085': lazy(() =>
+    import('../platform/hierarchical-data-tree-table/HierarchicalDataTreeTableDemo.jsx'),
+  ),
+  '086': lazy(() =>
+    import('../platform/flow-dependency-graph-canvas/FlowDependencyGraphCanvas.jsx'),
+  ),
+  '087': lazy(() =>
+    import('../platform/high-throughput-log-stream-panel/HighThroughputLogStream.jsx'),
+  ),
+  '088': lazy(() =>
+    import('../platform/nested-property-path-toolkit/NestedPropertyPathToolkit.jsx'),
+  ),
+  '089': lazy(() =>
+    import('../platform/i18n-money-ratio-datetime/MoneyRatioDatetimeTool.jsx'),
+  ),
+  '090': lazy(() =>
+    import('../platform/calendar-timezone-edge-validator/CalendarTimezoneEdgeValidator.jsx'),
+  ),
 }
 
 function ToolContent({ toolId }) {

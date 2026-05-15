@@ -1,0 +1,59 @@
+const VERSION = '1.0.0'
+
+const ERROR_CODES = {
+  INVALID_INTERVAL: 'INVALID_INTERVAL',
+  MAX_ATTEMPTS_EXCEEDED: 'MAX_ATTEMPTS_EXCEEDED',
+  TIMEOUT: 'TIMEOUT',
+  ABORTED: 'ABORTED',
+  VISIBILITY_PAUSED: 'VISIBILITY_PAUSED',
+  OPERATION_FAILED: 'OPERATION_FAILED',
+  RETRY_EXHAUSTED: 'RETRY_EXHAUSTED',
+  CLOCK_ROLLBACK: 'CLOCK_ROLLBACK',
+  INVALID_PARAMETER: 'INVALID_PARAMETER',
+  UNKNOWN: 'UNKNOWN',
+}
+
+const ERROR_MESSAGES = {
+  [ERROR_CODES.INVALID_INTERVAL]: 'intervalMs 必须为大于 0 的有限数字',
+  [ERROR_CODES.MAX_ATTEMPTS_EXCEEDED]: '已达到最大尝试次数',
+  [ERROR_CODES.TIMEOUT]: '操作超时',
+  [ERROR_CODES.ABORTED]: '操作被取消',
+  [ERROR_CODES.VISIBILITY_PAUSED]: '页面不可见，轮询已暂停',
+  [ERROR_CODES.OPERATION_FAILED]: '操作执行失败',
+  [ERROR_CODES.RETRY_EXHAUSTED]: '重试次数已耗尽',
+  [ERROR_CODES.CLOCK_ROLLBACK]: '检测到系统时钟回拨',
+  [ERROR_CODES.INVALID_PARAMETER]: '参数无效',
+  [ERROR_CODES.UNKNOWN]: '未知错误',
+}
+
+const DEFAULT_POLL_OPTIONS = {
+  intervalMs: 1000,
+  jitterRatio: 0,
+  maxAttempts: Infinity,
+  isImmediate: false,
+  backoffFactor: 1,
+  maxIntervalMs: 30000,
+  minIntervalMs: 100,
+  pauseOnHidden: true,
+  enableObservability: false,
+}
+
+const DEFAULT_RETRY_OPTIONS = {
+  retries: 3,
+  delayMs: 100,
+  backoffFactor: 2,
+  maxDelayMs: 30000,
+  retryOn: null,
+}
+
+const MAX_ACTIVE_POLLS_LIMIT = 100
+
+const JITTER_MIN = 0
+const JITTER_MAX = 1
+
+export {
+    DEFAULT_POLL_OPTIONS,
+    DEFAULT_RETRY_OPTIONS, ERROR_CODES,
+    ERROR_MESSAGES, JITTER_MAX, JITTER_MIN, MAX_ACTIVE_POLLS_LIMIT, VERSION
+}
+

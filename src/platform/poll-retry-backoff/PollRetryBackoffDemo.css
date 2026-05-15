@@ -1,0 +1,453 @@
+.poll-retry-backoff-demo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.poll-retry-backoff-demo .tool-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.poll-retry-backoff-demo .demo-header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.poll-retry-backoff-demo .demo-header h2 {
+  margin: 0 0 8px 0;
+  color: #1a1a1a;
+}
+
+.poll-retry-backoff-demo .demo-header p {
+  margin: 0;
+  color: #666;
+}
+
+.poll-retry-backoff-demo .tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 2px solid #eee;
+  padding: 0 20px;
+}
+
+.poll-retry-backoff-demo .tab {
+  padding: 12px 24px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+  transition: all 0.2s ease;
+  outline: none;
+  user-select: none;
+}
+
+.poll-retry-backoff-demo .tab:hover {
+  color: #333;
+  background: #f8f8f8;
+}
+
+.poll-retry-backoff-demo .tab:active {
+  background: #f0f0f0;
+}
+
+.poll-retry-backoff-demo .tab:focus-visible {
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  background: #f8fafc;
+}
+
+.poll-retry-backoff-demo .tab.active {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+  font-weight: 600;
+  background: #eff6ff;
+}
+
+.poll-retry-backoff-demo .tab-content-wrapper {
+  padding: 20px;
+}
+
+.poll-retry-backoff-demo .config-panel,
+.poll-retry-backoff-demo .control-panel,
+.poll-retry-backoff-demo .result-panel {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.poll-retry-backoff-demo .config-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.poll-retry-backoff-demo .config-group label {
+  min-width: 120px;
+  font-weight: 500;
+  color: #333;
+}
+
+.poll-retry-backoff-demo .config-group input[type="range"] {
+  flex: 1;
+  min-width: 200px;
+}
+
+.poll-retry-backoff-demo .config-group input[type="number"],
+.poll-retry-backoff-demo .config-group select,
+.poll-retry-backoff-demo .config-group input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  min-width: 120px;
+  transition: all 0.15s ease;
+  outline: none;
+}
+
+.poll-retry-backoff-demo .config-group input[type="number"]:hover,
+.poll-retry-backoff-demo .config-group select:hover,
+.poll-retry-backoff-demo .config-group input[type="text"]:hover {
+  border-color: #93c5fd;
+}
+
+.poll-retry-backoff-demo .config-group input[type="number"]:focus,
+.poll-retry-backoff-demo .config-group select:focus,
+.poll-retry-backoff-demo .config-group input[type="text"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.poll-retry-backoff-demo .config-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.poll-retry-backoff-demo .value-display {
+  background: #fff;
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-family: monospace;
+  color: #2563eb;
+}
+
+.poll-retry-backoff-demo .demo-btn {
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: 2px solid #2563eb;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  outline: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  user-select: none;
+}
+
+.poll-retry-backoff-demo .demo-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.25);
+  transform: translateY(-1px);
+}
+
+.poll-retry-backoff-demo .demo-btn:active:not(:disabled) {
+  background: #1e40af;
+  border-color: #1e40af;
+  box-shadow: 0 1px 2px rgba(37, 99, 235, 0.2);
+  transform: translateY(0);
+}
+
+.poll-retry-backoff-demo .demo-btn:focus-visible {
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+  outline: none;
+}
+
+.poll-retry-backoff-demo .demo-btn:disabled {
+  background: #9ca3af;
+  border-color: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.7;
+  box-shadow: none;
+  transform: none;
+}
+
+.poll-retry-backoff-demo .demo-btn.danger {
+  background: #dc2626;
+  border-color: #dc2626;
+}
+
+.poll-retry-backoff-demo .demo-btn.danger:hover:not(:disabled) {
+  background: #b91c1c;
+  border-color: #b91c1c;
+  box-shadow: 0 2px 4px rgba(220, 38, 38, 0.25);
+}
+
+.poll-retry-backoff-demo .demo-btn.danger:active:not(:disabled) {
+  background: #991b1b;
+  border-color: #991b1b;
+}
+
+.poll-retry-backoff-demo .demo-btn.danger:focus-visible {
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.3);
+}
+
+.poll-retry-backoff-demo .demo-btn.success {
+  background: #16a34a;
+  border-color: #16a34a;
+}
+
+.poll-retry-backoff-demo .demo-btn.success:hover:not(:disabled) {
+  background: #15803d;
+  border-color: #15803d;
+  box-shadow: 0 2px 4px rgba(22, 163, 74, 0.25);
+}
+
+.poll-retry-backoff-demo .demo-btn.success:active:not(:disabled) {
+  background: #166534;
+  border-color: #166534;
+}
+
+.poll-retry-backoff-demo .demo-btn.success:focus-visible {
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.3);
+}
+
+.poll-retry-backoff-demo .demo-btn.secondary {
+  background: #6b7280;
+  border-color: #6b7280;
+}
+
+.poll-retry-backoff-demo .demo-btn.secondary:hover:not(:disabled) {
+  background: #4b5563;
+  border-color: #4b5563;
+  box-shadow: 0 2px 4px rgba(107, 114, 128, 0.25);
+}
+
+.poll-retry-backoff-demo .demo-btn.secondary:active:not(:disabled) {
+  background: #374151;
+  border-color: #374151;
+}
+
+.poll-retry-backoff-demo .demo-btn.secondary:focus-visible {
+  box-shadow: 0 0 0 3px rgba(107, 114, 128, 0.3);
+}
+
+.poll-retry-backoff-demo .button-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.poll-retry-backoff-demo .status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.poll-retry-backoff-demo .status-badge.idle {
+  background: #e5e7eb;
+  color: #4b5563;
+}
+
+.poll-retry-backoff-demo .status-badge.running {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.poll-retry-backoff-demo .status-badge.success {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.poll-retry-backoff-demo .status-badge.error {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.poll-retry-backoff-demo .status-badge.paused {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.poll-retry-backoff-demo .table-wrapper {
+  overflow-x: auto;
+}
+
+.poll-retry-backoff-demo .timeline-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.poll-retry-backoff-demo .timeline-table th,
+.poll-retry-backoff-demo .timeline-table td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.poll-retry-backoff-demo .timeline-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+  color: #374151;
+  font-size: 13px;
+}
+
+.poll-retry-backoff-demo .timeline-table td {
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.poll-retry-backoff-demo .timeline-table tr:hover td {
+  background: #f9fafb;
+}
+
+.poll-retry-backoff-demo .timeline-table .status-success {
+  color: #16a34a;
+  font-weight: 500;
+}
+
+.poll-retry-backoff-demo .timeline-table .status-fail {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.poll-retry-backoff-demo .timeline-table .status-retry {
+  color: #d97706;
+  font-weight: 500;
+}
+
+.poll-retry-backoff-demo .info-panel {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.poll-retry-backoff-demo .info-panel h3 {
+  margin: 0 0 12px 0;
+  color: #1e40af;
+  font-size: 16px;
+}
+
+.poll-retry-backoff-demo .info-panel p {
+  margin: 8px 0;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.poll-retry-backoff-demo .info-panel pre {
+  background: #fff;
+  padding: 16px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 12px;
+  line-height: 1.5;
+  border: 1px solid #e5e7eb;
+}
+
+.poll-retry-backoff-demo .metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.poll-retry-backoff-demo .metric-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.poll-retry-backoff-demo .metric-card .metric-label {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.poll-retry-backoff-demo .metric-card .metric-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.poll-retry-backoff-demo .metric-card.success .metric-value {
+  color: #16a34a;
+}
+
+.poll-retry-backoff-demo .metric-card.error .metric-value {
+  color: #dc2626;
+}
+
+.poll-retry-backoff-demo .checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.poll-retry-backoff-demo .checkbox-wrapper label {
+  cursor: pointer;
+  min-width: auto;
+}
+
+.poll-retry-backoff-demo .section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.poll-retry-backoff-demo .injection-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.poll-retry-backoff-demo .retry-visual {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 80px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.poll-retry-backoff-demo .retry-bar {
+  flex: 1;
+  min-width: 20px;
+  background: linear-gradient(to top, #3b82f6, #60a5fa);
+  border-radius: 4px 4px 0 0;
+  transition: height 0.3s ease;
+}
+
+.poll-retry-backoff-demo .retry-bar.failed {
+  background: linear-gradient(to top, #ef4444, #f87171);
+}
+
+.poll-retry-backoff-demo .retry-bar.success {
+  background: linear-gradient(to top, #10b981, #34d399);
+}

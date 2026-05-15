@@ -1,0 +1,488 @@
+.safe-rich-text {
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.safe-rich-text .csp-notice {
+  margin-bottom: 24px;
+  padding: 12px 16px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #1e40af;
+}
+
+.safe-rich-text .csp-notice code {
+  background: #dbeafe;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Consolas', monospace;
+  font-size: 12px;
+}
+
+.safe-rich-text .mode-controls {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.safe-rich-text .mode-controls h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.safe-rich-text .mode-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.safe-rich-text .mode-btn {
+  padding: 8px 16px;
+  background: #fff;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.safe-rich-text .mode-btn:hover {
+  border-color: #9ca3af;
+  color: #374151;
+}
+
+.safe-rich-text .mode-btn.active {
+  background: #dbeafe;
+  border-color: #3b82f6;
+  color: #1d4ed8;
+}
+
+.safe-rich-text .config-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.safe-rich-text .config-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.safe-rich-text .config-item label {
+  font-size: 13px;
+  color: #4b5563;
+  cursor: pointer;
+}
+
+.safe-rich-text .config-item select {
+  padding: 6px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #374151;
+  cursor: pointer;
+}
+
+.safe-rich-text .owasp-samples {
+  margin-bottom: 24px;
+}
+
+.safe-rich-text .owasp-samples h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.safe-rich-text .sample-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.safe-rich-text .sample-btn {
+  padding: 6px 12px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #991b1b;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.safe-rich-text .sample-btn:hover {
+  background: #fee2e2;
+}
+
+.safe-rich-text .main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 900px) {
+  .safe-rich-text .main-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.safe-rich-text .panel {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.safe-rich-text .panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.safe-rich-text .panel-header h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.safe-rich-text .panel-header .meta {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.safe-rich-text .panel-body {
+  padding: 16px;
+}
+
+.safe-rich-text .html-input {
+  width: 100%;
+  min-height: 200px;
+  padding: 12px;
+  font-family: 'Monaco', 'Consolas', monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.safe-rich-text .html-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.safe-rich-text .input-meta {
+  display: flex;
+  gap: 24px;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.safe-rich-text .render-frame {
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.safe-rich-text .render-view-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.safe-rich-text .render-view-tabs .tab-btn {
+  padding: 6px 12px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  font-size: 12px;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.safe-rich-text .render-view-tabs .tab-btn.active {
+  background: #fff;
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.safe-rich-text .rendered-content {
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 0 6px 6px 6px;
+  min-height: 160px;
+  background: #fff;
+}
+
+.safe-rich-text .raw-content {
+  padding: 12px;
+  background: #1f2937;
+  border-radius: 0 6px 6px 6px;
+  min-height: 160px;
+  font-family: 'Monaco', 'Consolas', monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #e5e7eb;
+  white-space: pre-wrap;
+  word-break: break-all;
+  overflow-x: auto;
+}
+
+.safe-rich-text .rendered-content h1,
+.safe-rich-text .rendered-content h2,
+.safe-rich-text .rendered-content h3,
+.safe-rich-text .rendered-content h4,
+.safe-rich-text .rendered-content h5,
+.safe-rich-text .rendered-content h6 {
+  margin: 0.5em 0;
+  line-height: 1.3;
+}
+
+.safe-rich-text .rendered-content p {
+  margin: 0.5em 0;
+}
+
+.safe-rich-text .rendered-content ul,
+.safe-rich-text .rendered-content ol {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+
+.safe-rich-text .rendered-content table {
+  border-collapse: collapse;
+  margin: 0.5em 0;
+}
+
+.safe-rich-text .rendered-content th,
+.safe-rich-text .rendered-content td {
+  border: 1px solid #e5e7eb;
+  padding: 4px 8px;
+}
+
+.safe-rich-text .action-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.safe-rich-text .action-btn {
+  padding: 8px 16px;
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.safe-rich-text .action-btn:hover {
+  background: #e5e7eb;
+}
+
+.safe-rich-text .action-btn.primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.safe-rich-text .action-btn.primary:hover {
+  background: #1d4ed8;
+}
+
+.safe-rich-text .action-btn.success {
+  background: #10b981;
+  border-color: #10b981;
+  color: #fff;
+  cursor: default;
+}
+
+.safe-rich-text .action-btn:disabled {
+  opacity: 1;
+}
+
+.safe-rich-text .diagnostics-section {
+  margin-bottom: 24px;
+}
+
+.safe-rich-text .diagnostics-section h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.safe-rich-text .diagnostics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.safe-rich-text .diagnostic-card {
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.safe-rich-text .diagnostic-card.stripped-tags {
+  background: #fffbeb;
+  border-color: #fde68a;
+}
+
+.safe-rich-text .diagnostic-card.stripped-attrs {
+  background: #f0f9ff;
+  border-color: #bae6fd;
+}
+
+.safe-rich-text .diagnostic-card.errors {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.safe-rich-text .diagnostic-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.safe-rich-text .stripped-tags h4 {
+  color: #92400e;
+}
+
+.safe-rich-text .stripped-attrs h4 {
+  color: #075985;
+}
+
+.safe-rich-text .errors h4 {
+  color: #991b1b;
+}
+
+.safe-rich-text .count-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-left: 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.safe-rich-text .stripped-tags .count-badge {
+  background: #fde68a;
+  color: #92400e;
+}
+
+.safe-rich-text .stripped-attrs .count-badge {
+  background: #bae6fd;
+  color: #075985;
+}
+
+.safe-rich-text .errors .count-badge {
+  background: #fecaca;
+  color: #991b1b;
+}
+
+.safe-rich-text .diagnostic-list {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 12px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.safe-rich-text .diagnostic-list li {
+  margin: 4px 0;
+  color: #4b5563;
+}
+
+.safe-rich-text .diagnostic-list code {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Consolas', monospace;
+  font-size: 11px;
+}
+
+.safe-rich-text .empty-diagnostic {
+  margin: 0;
+  font-size: 12px;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.safe-rich-text .plain-text-notice {
+  margin: 12px 0;
+  padding: 12px;
+  background: #fef9c3;
+  border: 1px solid #facc15;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #854d0e;
+}
+
+.safe-rich-text .mode-info {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.safe-rich-text .mode-info.difference-note {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+  color: #166534;
+}
+
+.safe-rich-text .mode-info strong {
+  color: #1f2937;
+}
+
+@media (max-width: 640px) {
+  .safe-rich-text {
+    padding: 16px;
+  }
+
+  .safe-rich-text .tool-header h1 {
+    font-size: 22px;
+  }
+
+  .safe-rich-text .config-section {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .safe-rich-text .diagnostics-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -63,6 +63,16 @@ const IMPLEMENTED_TOOLS = {
   '058': lazy(() => import('../platform/feedback-ui/FeedbackUITool.jsx')),
   '059': lazy(() => import('../platform/error-recovery/ErrorRecoveryDemo.jsx')),
   '060': lazy(() => import('../platform/route-sync/RouteSyncDemo.jsx')),
+  '061': lazy(() => import('../platform/feature-remote-config/FeatureRemoteConfigDemo.jsx')),
+  '062': lazy(() => import('../platform/request-correlation/RequestCorrelationDemo.jsx')),
+  '063': lazy(() => import('../platform/form-query-sync/FormQuerySyncDemo.jsx')),
+  '064': lazy(() => import('../platform/error-message-mapper/ErrorMessageMapperDemo.jsx')),
+  '065': lazy(() => import('../platform/large-content-performance/LargeContentPerformanceDemo.jsx')),
+  '066': lazy(() => import('../platform/poll-retry-backoff/PollRetryBackoffDemo.jsx')),
+  '067': lazy(() => import('../platform/file-upload-surface/FileUploadSurface.jsx')),
+  '068': lazy(() => import('../platform/i18n-kit/I18nKitDemo.jsx')),
+  '069': lazy(() => import('../platform/safe-rich-text/SafeRichTextDemo.jsx')),
+  '070': lazy(() => import('../platform/sensitive-input-mask/SensitiveInputMask.jsx')),
 }
 
 function ToolContent({ toolId }) {

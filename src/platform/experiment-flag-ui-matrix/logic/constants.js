@@ -1,0 +1,85 @@
+const VERSION = '1.0.0'
+
+const ERROR_CODES = {
+  INVALID_CONTEXT: 'INVALID_CONTEXT',
+  INVALID_RULE: 'INVALID_RULE',
+  INVALID_FLAG: 'INVALID_FLAG',
+  INVALID_EXPERIMENT: 'INVALID_EXPERIMENT',
+  BUCKETING_ERROR: 'BUCKETING_ERROR',
+  RULE_EVALUATION_ERROR: 'RULE_EVALUATION_ERROR',
+  MOCK_API_ERROR: 'MOCK_API_ERROR',
+  UNKNOWN: 'UNKNOWN',
+}
+
+const ERROR_MESSAGES = {
+  [ERROR_CODES.INVALID_CONTEXT]: '无效的上下文对象',
+  [ERROR_CODES.INVALID_RULE]: '无效的规则定义',
+  [ERROR_CODES.INVALID_FLAG]: '无效的功能标志',
+  [ERROR_CODES.INVALID_EXPERIMENT]: '无效的实验配置',
+  [ERROR_CODES.BUCKETING_ERROR]: '分桶算法错误',
+  [ERROR_CODES.RULE_EVALUATION_ERROR]: '规则评估错误',
+  [ERROR_CODES.MOCK_API_ERROR]: '模拟 API 错误',
+  [ERROR_CODES.UNKNOWN]: '未知错误',
+}
+
+const RULE_OPERATORS = {
+  EQUALS: 'equals',
+  NOT_EQUALS: 'notEquals',
+  GREATER_THAN: 'greaterThan',
+  LESS_THAN: 'lessThan',
+  IN: 'in',
+  NOT_IN: 'notIn',
+  CONTAINS: 'contains',
+  NOT_CONTAINS: 'notContains',
+  STARTS_WITH: 'startsWith',
+  ENDS_WITH: 'endsWith',
+  AND: 'and',
+  OR: 'or',
+}
+
+const VARIANT_TYPES = {
+  CONTROL: 'control',
+  VARIANT_A: 'variant_a',
+  VARIANT_B: 'variant_b',
+  CUSTOM: 'custom',
+}
+
+const CONFIG_SCENARIOS = {
+  GRADUAL_ROLLOUT: 'gradual_rollout',
+  EMERGENCY_SHUTDOWN: 'emergency_shutdown',
+  LAYERED_EXPERIMENT: 'layered_experiment',
+}
+
+const DEFAULT_BUCKET_COUNT = 100
+const HASH_SEED = 0x811c9dc5
+const HASH_PRIME = 0x01000193
+
+const MAX_RULE_NESTING = 5
+const MAX_RULES_PER_FLAG = 20
+
+const MOCK_API_PATH = '/mock-flags'
+const MOCK_API_DELAY_MS = 500
+
+const SSR_LOADING_STATE = {
+  IDLE: 'idle',
+  LOADING: 'loading',
+  READY: 'ready',
+  ERROR: 'error',
+}
+
+export {
+  VERSION,
+  ERROR_CODES,
+  ERROR_MESSAGES,
+  RULE_OPERATORS,
+  VARIANT_TYPES,
+  CONFIG_SCENARIOS,
+  DEFAULT_BUCKET_COUNT,
+  HASH_SEED,
+  HASH_PRIME,
+  MAX_RULE_NESTING,
+  MAX_RULES_PER_FLAG,
+  MOCK_API_PATH,
+  MOCK_API_DELAY_MS,
+  SSR_LOADING_STATE,
+}

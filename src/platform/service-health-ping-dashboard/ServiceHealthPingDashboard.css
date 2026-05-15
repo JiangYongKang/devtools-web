@@ -1,0 +1,631 @@
+
+.service-health-dashboard {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.service-health-dashboard .tool-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.service-health-dashboard .demo-header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.service-health-dashboard .demo-header h2 {
+  margin: 0 0 8px 0;
+  color: #1f2937;
+  font-size: 24px;
+}
+
+.service-health-dashboard .demo-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.service-health-dashboard .warning-card {
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.service-health-dashboard .warning-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.service-health-dashboard .warning-content h4 {
+  margin: 0 0 8px 0;
+  color: #92400e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.service-health-dashboard .warning-content ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #78350f;
+  font-size: 13px;
+}
+
+.service-health-dashboard .warning-content li {
+  margin-bottom: 4px;
+}
+
+.service-health-dashboard .config-panel {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.service-health-dashboard .panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.service-health-dashboard .panel-header h3 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.service-health-dashboard .panel-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.service-health-dashboard .btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-health-dashboard .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.service-health-dashboard .btn.primary {
+  background: #3b82f6;
+  color: white;
+}
+
+.service-health-dashboard .btn.primary:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.service-health-dashboard .btn.secondary {
+  background: white;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.service-health-dashboard .btn.secondary:hover:not(:disabled) {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.service-health-dashboard .file-label {
+  cursor: pointer;
+}
+
+.service-health-dashboard .add-target-form {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.service-health-dashboard .form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.service-health-dashboard .form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.service-health-dashboard .form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.service-health-dashboard .form-group input,
+.service-health-dashboard .form-group select {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.15s ease;
+}
+
+.service-health-dashboard .form-group input:focus,
+.service-health-dashboard .form-group select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.service-health-dashboard .form-group input.error {
+  border-color: #ef4444;
+}
+
+.service-health-dashboard .error-text {
+  color: #dc2626;
+  font-size: 12px;
+}
+
+.service-health-dashboard .form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.service-health-dashboard .polling-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.service-health-dashboard .checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+}
+
+.service-health-dashboard .checkbox-label input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.service-health-dashboard .polling-interval {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.service-health-dashboard .polling-interval label {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.service-health-dashboard .polling-interval select {
+  padding: 6px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.service-health-dashboard .probe-all-btn {
+  margin-left: auto;
+}
+
+.service-health-dashboard .probe-table-container {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.service-health-dashboard .table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.service-health-dashboard .table-header h3 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.service-health-dashboard .filter-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.service-health-dashboard .filter-controls label {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.service-health-dashboard .filter-controls select {
+  padding: 6px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.service-health-dashboard .table-wrapper {
+  overflow-x: auto;
+}
+
+.service-health-dashboard .probe-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.service-health-dashboard .probe-table th,
+.service-health-dashboard .probe-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.service-health-dashboard .probe-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+  font-size: 13px;
+  color: #374151;
+}
+
+.service-health-dashboard .probe-table td {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.service-health-dashboard .probe-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.service-health-dashboard .target-row {
+  cursor: pointer;
+}
+
+.service-health-dashboard .target-name {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.service-health-dashboard .target-url {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.service-health-dashboard .group-tag {
+  background: #e0e7ff;
+  color: #4338ca;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.service-health-dashboard .target-sparkline {
+  width: 100px;
+}
+
+.service-health-dashboard .sparkline {
+  display: block;
+}
+
+.service-health-dashboard .circuit-state {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.service-health-dashboard .circuit-state:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-health-dashboard .circuit-state::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.service-health-dashboard .circuit-state.circuit-closed {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.service-health-dashboard .circuit-state.circuit-closed::before {
+  background: #22c55e;
+}
+
+.service-health-dashboard .circuit-state.circuit-open {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.service-health-dashboard .circuit-state.circuit-open::before {
+  background: #ef4444;
+}
+
+.service-health-dashboard .circuit-state.circuit-half-open {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.service-health-dashboard .circuit-state.circuit-half-open::before {
+  background: #f59e0b;
+}
+
+.service-health-dashboard .target-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.service-health-dashboard .action-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #374151;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.service-health-dashboard .action-btn:hover:not(:disabled) {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.service-health-dashboard .action-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.service-health-dashboard .action-btn.probe-btn:hover:not(:disabled) {
+  background: #dbeafe;
+  border-color: #3b82f6;
+  color: #1d4ed8;
+}
+
+.service-health-dashboard .action-btn.delete-btn:hover:not(:disabled) {
+  background: #fee2e2;
+  border-color: #ef4444;
+  color: #dc2626;
+}
+
+.service-health-dashboard .status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.service-health-dashboard .status-badge.success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.service-health-dashboard .status-badge.error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.service-health-dashboard .status-badge.idle {
+  background: #e5e7eb;
+  color: #6b7280;
+}
+
+.service-health-dashboard .status-badge.running {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.service-health-dashboard .empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6b7280;
+}
+
+.service-health-dashboard .empty-state p {
+  margin: 0;
+}
+
+.service-health-dashboard .visibility-warning {
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  border-radius: 6px;
+  padding: 12px 16px;
+  text-align: center;
+  font-size: 14px;
+  color: #92400e;
+}
+
+.service-health-dashboard .detail-drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+
+.service-health-dashboard .detail-drawer {
+  width: 500px;
+  max-width: 90vw;
+  background: white;
+  height: 100%;
+  overflow-y: auto;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-health-dashboard .drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
+}
+
+.service-health-dashboard .drawer-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #1f2937;
+}
+
+.service-health-dashboard .close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #6b7280;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: background 0.15s ease;
+}
+
+.service-health-dashboard .close-btn:hover {
+  background: #f3f4f6;
+}
+
+.service-health-dashboard .drawer-content {
+  padding: 20px;
+}
+
+.service-health-dashboard .drawer-section {
+  margin-bottom: 24px;
+}
+
+.service-health-dashboard .drawer-section h4 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.service-health-dashboard .info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.service-health-dashboard .info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.service-health-dashboard .info-item.full-width {
+  grid-column: span 2;
+}
+
+.service-health-dashboard .info-label {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.service-health-dashboard .info-value {
+  font-size: 14px;
+  color: #1f2937;
+  word-break: break-word;
+}
+
+.service-health-dashboard .info-value.url-value {
+  font-size: 13px;
+  color: #3b82f6;
+}
+
+.service-health-dashboard .info-value.error-type {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.service-health-dashboard .info-value.error-message {
+  color: #6b7280;
+  font-style: italic;
+}
+
+.service-health-dashboard .headers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.service-health-dashboard .header-item {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.service-health-dashboard .header-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.service-health-dashboard .header-value {
+  font-size: 13px;
+  color: #1f2937;
+  word-break: break-all;
+}

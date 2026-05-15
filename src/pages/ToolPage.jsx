@@ -111,6 +111,36 @@ const IMPLEMENTED_TOOLS = {
   '090': lazy(() =>
     import('../platform/calendar-timezone-edge-validator/CalendarTimezoneEdgeValidator.jsx'),
   ),
+  '091': lazy(() =>
+    import('../platform/network-resilience-request-queue-ui/NetworkResilienceQueueDemo.jsx'),
+  ),
+  '092': lazy(() =>
+    import('../platform/route-lazy-chunking-playbook/RouteLazyChunkingPlaybook.jsx'),
+  ),
+  '093': lazy(() =>
+    import('../platform/bounded-concurrency-task-queue/BoundedConcurrencyTaskQueueDemo.jsx'),
+  ),
+  '094': lazy(() =>
+    import('../platform/dirty-route-leave-guard/DirtyRouteLeaveGuardDemo.jsx'),
+  ),
+  '095': lazy(() =>
+    import('../platform/service-health-ping-dashboard/ServiceHealthPingDashboard.jsx'),
+  ),
+  '096': lazy(() =>
+    import('../platform/settings-snapshot-migration-ui/SettingsSnapshotMigrationDemo.jsx'),
+  ),
+  '097': lazy(() =>
+    import('../platform/experiment-flag-ui-matrix/ExperimentFlagUIMatrix.jsx'),
+  ),
+  '098': lazy(() =>
+    import('../platform/http-deprecation-sunset-banner/HttpDeprecationSunsetBanner.jsx'),
+  ),
+  '099': lazy(() =>
+    import('../platform/outbound-http-resilience-policy/OutboundHttpResiliencePolicyDemo.jsx'),
+  ),
+  '100': lazy(() =>
+    import('../platform/build-provenance-audit-console/BuildProvenanceAuditConsole.jsx'),
+  ),
 }
 
 function ToolContent({ toolId }) {

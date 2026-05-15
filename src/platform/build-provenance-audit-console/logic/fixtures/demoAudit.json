@@ -1,0 +1,50 @@
+{
+  "vulnerabilities": {
+    "lodash": [
+      {
+        "title": "Prototype Pollution",
+        "severity": "high",
+        "cvss": { "score": 7.5 },
+        "cve": ["CVE-2021-1234"],
+        "fixedVersions": [">=4.17.21"],
+        "range": "<4.17.21",
+        "via": ["direct"]
+      },
+      {
+        "title": "Command Injection",
+        "severity": "critical",
+        "cvss": { "score": 9.8 },
+        "cve": ["CVE-2021-5678"],
+        "fixedVersions": [">=4.17.20"],
+        "range": "<4.17.20",
+        "via": ["direct"]
+      }
+    ],
+    "axios": [
+      {
+        "title": "Server-Side Request Forgery",
+        "severity": "medium",
+        "cvss": { "score": 6.1 },
+        "cve": ["CVE-2021-9012"],
+        "fixedVersions": [">=0.21.2"],
+        "range": "<0.21.2",
+        "via": ["dependency"]
+      }
+    ],
+    "minimist": [
+      {
+        "title": "Prototype Pollution",
+        "severity": "low",
+        "cvss": { "score": 3.1 },
+        "cve": ["CVE-2020-1234"],
+        "fixedVersions": [">=1.2.6"],
+        "range": "<1.2.6",
+        "via": ["transitive"]
+      }
+    ]
+  },
+  "metadata": {
+    "totalVulnerabilities": 4,
+    "auditVersion": "1.0.0"
+  }
+}

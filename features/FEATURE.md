@@ -127,23 +127,123 @@
 - 078 [已完成] 同页多面板之间的轻量事件/状态总线（可选，与复杂工具页配合）
 - 079 [已完成] 客户端侧模糊搜索、过滤与高亮组件
 - 080 [已完成] 上传文件的类型、大小与基础魔数校验（前端第一道闸）
-- 081 [未实现] 图片预览、缩放与水印参数预览 UI（与实际上传链路解耦的抽象）
-- 082 [未实现] 短链或分享链接的展示、复制与打开方式说明（抽象）
-- 083 [未实现] 邮件/通知模板的变量替换预览（纯前端演示）
-- 084 [未实现] 验证码或短信倒计时、频率限制相关的前端交互与禁用态
-- 085 [未实现] 树形数据的可展开列表或表格组件
-- 086 [未实现] 简易依赖图或流程图布局（纯前端可视化，与具体业务解耦）
-- 087 [未实现] 日志或流式输出的折叠、采样与高亮策略（高频输出场景）
-- 088 [未实现] 对象嵌套路径的安全读取与表单绑定辅助（降低深层空值错误）
-- 089 [未实现] 金额、比率与日期的本地化展示与输入解析
-- 090 [未实现] 日历与时区边界在日期控件中的校验与提示
-- 091 [未实现] 离线/弱网检测与 queued 请求的 UI 提示
-- 092 [未实现] 路由懒加载与按工具拆分的代码分割策略
-- 093 [未实现] 前端「并发上限」任务队列（控制同时进行的请求或 Worker 任务数）
-- 094 [未实现] 页面离开前未保存改动的浏览器级提示（beforeunload/路由守卫策略）
-- 095 [未实现] 依赖健康检查面板：Ping 配置的 API 或第三方并展示延迟与状态
-- 096 [未实现] 用户本地设置导入/导出与版本兼容说明
-- 097 [未实现] 灰度或实验开关下的 UI 分支展示（与后端或配置约定对齐，抽象）
-- 098 [未实现] API 弃用或版本提示的响应头解析与站内横幅展示
-- 099 [未实现] 对外请求默认超时、重试与取消策略的前端统一配置
-- 100 [未实现] 构建产物与依赖：版本信息展示、Source Map 策略与安全审计入口（与 CI 对齐）
+- 081 [已完成] 图片预览、缩放与水印参数预览 UI（与实际上传链路解耦的抽象）
+- 082 [已完成] 短链或分享链接的展示、复制与打开方式说明（抽象）
+- 083 [已完成] 邮件/通知模板的变量替换预览（纯前端演示）
+- 084 [已完成] 验证码或短信倒计时、频率限制相关的前端交互与禁用态
+- 085 [已完成] 树形数据的可展开列表或表格组件
+- 086 [已完成] 简易依赖图或流程图布局（纯前端可视化，与具体业务解耦）
+- 087 [已完成] 日志或流式输出的折叠、采样与高亮策略（高频输出场景）
+- 088 [已完成] 对象嵌套路径的安全读取与表单绑定辅助（降低深层空值错误）
+- 089 [已完成] 金额、比率与日期的本地化展示与输入解析
+- 090 [已完成] 日历与时区边界在日期控件中的校验与提示
+- 091 [已完成] 离线/弱网检测与 queued 请求的 UI 提示
+- 092 [已完成] 路由懒加载与按工具拆分的代码分割策略
+- 093 [已完成] 前端「并发上限」任务队列（控制同时进行的请求或 Worker 任务数）
+- 094 [已完成] 页面离开前未保存改动的浏览器级提示（beforeunload/路由守卫策略）
+- 095 [已完成] 依赖健康检查面板：Ping 配置的 API 或第三方并展示延迟与状态
+- 096 [已完成] 用户本地设置导入/导出与版本兼容说明
+- 097 [已完成] 灰度或实验开关下的 UI 分支展示（与后端或配置约定对齐，抽象）
+- 098 [已完成] API 弃用或版本提示的响应头解析与站内横幅展示
+- 099 [已完成] 对外请求默认超时、重试与取消策略的前端统一配置
+- 100 [已完成] 构建产物与依赖：版本信息展示、Source Map 策略与安全审计入口（与 CI 对齐）
+- 101 [未实现] JSON Schema 多版本校验、组合关键字（allOf/oneOf）与 `$ref` 解析及错误路径树定位
+- 102 [未实现] JSON Patch（RFC 6902）与 JSON Merge Patch 双模式：补丁生成、应用预览与冲突检测
+- 103 [未实现] JMESPath / JSONPath 查询表达式编辑器：结果树高亮、路径复制与多文档批量查询
+- 104 [未实现] YAML 锚点、别名与合并键解析调试：引用链可视化、循环引用检测与 JSON 导出
+- 105 [未实现] TOML 文档解析校验、与 JSON/YAML 互转及表格/内联表结构树形浏览
+- 106 [未实现] XML XPath / XQuery -lite 查询：命名空间前缀映射、节点路径定位与结果集导出
+- 107 [未实现] NDJSON / JSON Lines 逐行校验：错误行号定位、流式分片解析与大文件抽样统计
+- 108 [未实现] CSV 方言自动检测、列类型推断、异常单元格列表与可配置导出 Schema
+- 109 [未实现] 多源配置深度合并工作台：JSON/YAML/TOML 三路输入、合并策略对比与冲突 diff
+- 110 [未实现] JSONata 表达式求值：示例数据集、中间步骤追踪与类型错误定位
+- 111 [未实现] HAR 文件导入分析：请求瀑布时序、状态码分布、慢请求排行与 cURL 片段导出
+- 112 [未实现] cURL 命令与 fetch/axios/got 代码双向转换（含 Header、Body、证书与代理参数）
+- 113 [未实现] OpenAPI 3 片段浏览器：路径/Schema 搜索、示例请求构造与响应 mock 预览
+- 114 [未实现] Postman Collection v2.1 导入：环境变量替换、批量请求编排预览与断言规则摘要
+- 115 [未实现] SOAP Envelope 解析：Body 摘要、WS-Security 头字段展示与 WSDL 片段 XSD 校验
+- 116 [未实现] Server-Sent Events 客户端：流式接收、Last-Event-ID 断线重连与事件类型过滤
+- 117 [未实现] HTTP 缓存策略模拟器：Cache-Control/ETag/Last-Modified 组合、304 判定与存储分区说明
+- 118 [未实现] Rate Limit 响应头解析（Retry-After、X-RateLimit-*）：重试窗口时间线与配额可视化
+- 119 [未实现] gRPC-Web / Connect Unary 调用 Playground（Protobuf JSON 映射、metadata 与错误码说明）
+- 120 [未实现] GraphQL 内省浏览器：Schema 树、查询自动生成、字段 deprecation 与 cost 估算演示
+- 121 [未实现] OAuth2 PKCE 授权码流程交互模拟：code_verifier/challenge 生成、回调参数解析与状态校验
+- 122 [未实现] JWT 签名验证工作台：JWKS 导入、alg 探测、claims 校验规则与 clock skew 容忍配置
+- 123 [未实现] WebAuthn / FIDO2 注册与断言流程说明页：challenge、RP ID 与 attestation 字段摘要
+- 124 [未实现] SAML 2.0 断言 Base64 解码：Issuer/Subject/Conditions 摘要与时效校验提示
+- 125 [未实现] CSRF 防护策略对比演示：Double Submit Cookie、Synchronizer Token 与 SameSite 组合说明
+- 126 [未实现] Content-Security-Policy 指令解析器：指令冲突检测、report-uri 模拟与违规样例生成
+- 127 [未实现] CORS 预检诊断：Origin/Method/Header 组合模拟、简单/非简单请求判定与修复建议
+- 128 [未实现] Subresource Integrity 哈希生成：sha256/sha384/sha512 多算法、integrity 属性拼装与校验
+- 129 [未实现] 密钥派生参数对比（PBKDF2 / scrypt / Argon2）：迭代次数、盐值长度与耗时基准演示
+- 130 [未实现] 非对称密钥对生成与 PEM / JWK / SPKI 格式互转（仅浏览器 Web Crypto，含用途与风险提示）
+- 131 [未实现] JavaScript AST 可视化：Esprima/Babel 解析、节点树展开、源码位置跳转与选中节点 JSON 导出
+- 132 [未实现] Babel 插件 Transform 沙箱：插件链配置、输入源码→输出对比与 source map 映射预览
+- 133 [未实现] TypeScript 类型查询演示：tsconfig 片段、类型打印（typeToString）与 d.ts 草稿生成
+- 134 [未实现] ESLint 扁平配置草稿编辑器：规则启停、样例代码诊断结果与 fix 预览（纯前端 linter）
+- 135 [未实现] Prettier 多文件格式化 diff：选项 profile、忽略文件模式与并排/统一 diff 切换
+- 136 [未实现] Source Map 栈帧还原：generated↔original 位置映射、names 查找与多段 map 链接
+- 137 [未实现] Rollup / Webpack stats.json 导入：模块依赖图、chunk 体积 treemap 与重复依赖检测
+- 138 [未实现] Tree-shaking 前后模块对比：sideEffects 标记影响、未引用 export 列表与体积估算
+- 139 [未实现] 正则引擎高级调试：捕获组回溯说明、Lookahead/Lookbehind 可视化与 catastrophic backtracking 警告
+- 140 [未实现] Git unified diff / patch 解析：hunk 导航、文件重命名检测与 apply 冲突预览（纯文本层）
+- 141 [未实现] SQL 多方言差异对照：MySQL / PostgreSQL / SQLite 语法转换提示与函数映射表
+- 142 [未实现] SQL EXPLAIN 文本解析：算子树可视化、成本字段摘要与全表扫描高亮
+- 143 [未实现] ER 图 DSL 编辑器（Mermaid dbDiagram 或等价）：实体关系渲染、导出 SQL DDL 草稿
+- 144 [未实现] MongoDB 查询文档 Builder：find / aggregate 管道 stages 编排、样例文档匹配预览
+- 145 [未实现] Redis 命令序列模拟器：STRING/HASH/LIST/SET/ZSET 操作、TTL 时间线与内存键空间浏览
+- 146 [未实现] InfluxDB Line Protocol 解析：measurement/tag/field 拆分、时间戳精度与类型推断
+- 147 [未实现] Cypher 查询语法高亮与 EXPLAIN 计划文本树（Neo4j 风格，纯前端演示）
+- 148 [未实现] Apache Parquet 元数据只读预览：schema、row group 统计与列编码信息（WASM/纯 JS 解析）
+- 149 [未实现] 数据库 Migration SQL 依赖排序：外键拓扑排序、循环依赖检测与执行批次建议
+- 150 [未实现] CRDT 文本合并演示（LWW / RGA 简化版）：多副本编辑、合并结果与冲突标记可视化
+- 151 [未实现] Cron 表达式高级调度：下次 N 次触发时间序列、多时区对照、非法日期（如 2 月 30 日）提示
+- 152 [未实现] Kubernetes Manifest 校验：apiVersion/kind 摘要、Probe/Resource 字段检查与 YAML→JSON 预览
+- 153 [未实现] Docker Compose 服务依赖图：depends_on/healthcheck 解析、启动顺序拓扑与端口映射表
+- 154 [未实现] Terraform HCL 片段格式化与 plan 输出文本解析：resource change 摘要与 drift 标记
+- 155 [未实现] Ansible Playbook YAML 任务链预览：handler/notify 关系、变量插值与 dry-run 命令生成
+- 156 [未实现] GitHub Actions workflow YAML 可视化：job 依赖 DAG、matrix 展开与 secrets 占位说明
+- 157 [未实现] Helm Chart 模板渲染：values.yaml 注入、manifest 预览与 `tpl` 函数调试
+- 158 [未实现] Nginx / Caddy 配置片段语法高亮与 upstream 块结构摘要（多文件 include 模拟）
+- 159 [未实现] systemd unit 文件解析：Unit/Service/Install 段摘要与依赖顺序说明
+- 160 [未实现] Prometheus 告警规则 YAML 校验：expr 语法检查、标签模板预览与 firing 样例
+- 161 [未实现] 多通道颜色空间转换链：RGB↔HSL↔HSV↔OKLCH↔CMYK，ΔE 色差计算与 palettes 导出
+- 162 [未实现] CSS 自定义属性（Design Token）主题矩阵：亮/暗/高对比多套 token 切换与 contrast 检查
+- 163 [未实现] SVG 路径命令解析与可视化编辑：M/L/C/Q/A 分段高亮、边界框与路径长度估算
+- 164 [未实现] Canvas 2D 绘制指令录制回放：序列化 draw call、导出 PNG/SVG 与缩放适配
+- 165 [未实现] WebGL Shader 语法高亮与 uniform 摘要（GLSL ES 片段，错误行定位）
+- 166 [未实现] 音频 PCM / WAV 头解析：采样率/位深/声道、波形预览与片段导出
+- 167 [未实现] 视频容器元数据只读预览：MP4 moov/mdat 结构摘要与关键帧时间点列表
+- 168 [未实现] EXIF / IPTC 元数据提取与 GPS 坐标地图链接（本地文件，不上传服务器）
+- 169 [未实现] 字体文件（TTF/OTF/WOFF2）表结构摘要：glyph 数量、unicode range 与 family 名称
+- 170 [未实现] Lottie JSON 动画预览：图层树、关键帧摘要与播放控制（canvas/svg 渲染）
+- 171 [未实现] IPv6 地址规范化、压缩/展开互转、类型（ULA/GUA/link-local）判定与子网划分
+- 172 [未实现] BGP AS Path 与 Prefix 列表解析：CIDR 聚合预览与私有 ASN 标记
+- 173 [未实现] DNS 记录可视化（需公共 DoH API 或代理说明）：A/AAAA/CNAME/MX/TXT 结果与 TTL 展示
+- 174 [未实现] TLS 证书链解析：SAN 列表、有效期时间线、签名算法与弱 cipher 提示
+- 175 [未实现] WireGuard 配置片段解析：Peer/AllowedIPs 摘要与密钥格式校验（不含私钥存储）
+- 176 [未实现] NTP 时间偏移估算演示：客户端时间戳与 stratum/leap 字段说明（模拟或公共 API）
+- 177 [未实现] MQTT 主题与 payload 调试客户端：QoS/retain/will 配置与通配符订阅说明
+- 178 [未实现] STUN/TURN ICE candidate 解析：sdp m-line、candidate 字段摘要与连通性检查说明
+- 179 [未实现] eBPF / tcpdump 过滤表达式编译说明：BPF 指令草稿与人类可读对照（教学向）
+- 180 [未实现] SNMP OID 树浏览与 MIB 片段导入：trap varbind 解析演示
+- 181 [未实现] 概率分布采样与直方图可视化：正态/泊松/二项等参数可调、种子可复现
+- 182 [未实现] 蒙特卡洛 π 估算与收敛曲线：样本量、误差界与 Web Worker 并行分片
+- 183 [未实现] 线性回归 / 最小二乘演示：散点输入、拟合直线、R² 与残差图
+- 184 [未实现] 矩阵运算工作台：加减乘、转置、行列式（小矩阵）、可逆性检测与步骤说明
+- 185 [未实现] 单位换算链式推导：量纲分析、复合单位（如 m/s²→g）与精度保留策略
+- 186 [未实现] 大数 / 高精度小数运算演示：BigInt 与 decimal.js 风格运算对比及溢出提示
+- 187 [未实现] 日期业务规则引擎：工作日历、节假日跳过、时区 DST 边界与 SLA 截止计算
+- 188 [未实现] 金融复利 / 分期 / IRR 计算器：现金流序列输入、NPV 与敏感性表格
+- 189 [未实现] 地理坐标系转换：WGS84↔GCJ02↔BD09 演示与偏移量说明（合规提示）
+- 190 [未实现] Haversine 距离与 geohash 编解码：多点路径累计、精度级别与边界框
+- 191 [未实现] 状态机可视化编辑器：states/transitions 表、非法迁移检测与 Mermaid 导出
+- 192 [未实现] 有限自动机（DFA/NFA）与正则等价性演示：ε 闭包、最小化步骤说明
+- 193 [未实现] 背包 / 最短路径算法动画：Dijkstra、Knapsack 0/1 步骤回放与复杂度说明
+- 194 [未实现] Huffman 编码构建：字符频率输入、树形结构、码表与压缩率对比
+- 195 [未实现] LRU / LFU 缓存驱逐模拟：操作序列输入、命中率和驱逐顺序逐步可视化
+- 196 [未实现] 一致性哈希环演示：节点增删、虚拟节点数与 key 分布热力图
+- 197 [未实现] Bloom Filter 参数计算器：期望假阳性率、位数组大小与 hash 函数个数
+- 198 [未实现] Merkle Tree 构建与 proof 验证：叶子 hash、 sibling path 与 inclusion 演示
+- 199 [未实现] 分布式 ID（Snowflake / ULID / UUID v7）解析：时间戳、机器位与排序性对比
+- 200 [未实现] 综合调试控制台：多面板联动（日志流 + 网络 HAR + 状态机快照）与场景剧本一键加载

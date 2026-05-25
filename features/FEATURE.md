@@ -147,36 +147,36 @@
 - 098 [已完成] API 弃用或版本提示的响应头解析与站内横幅展示
 - 099 [已完成] 对外请求默认超时、重试与取消策略的前端统一配置
 - 100 [已完成] 构建产物与依赖：版本信息展示、Source Map 策略与安全审计入口（与 CI 对齐）
-- 101 [未实现] JSON Schema 多版本校验、组合关键字（allOf/oneOf）与 `$ref` 解析及错误路径树定位
-- 102 [未实现] JSON Patch（RFC 6902）与 JSON Merge Patch 双模式：补丁生成、应用预览与冲突检测
-- 103 [未实现] JMESPath / JSONPath 查询表达式编辑器：结果树高亮、路径复制与多文档批量查询
-- 104 [未实现] YAML 锚点、别名与合并键解析调试：引用链可视化、循环引用检测与 JSON 导出
-- 105 [未实现] TOML 文档解析校验、与 JSON/YAML 互转及表格/内联表结构树形浏览
-- 106 [未实现] XML XPath / XQuery -lite 查询：命名空间前缀映射、节点路径定位与结果集导出
-- 107 [未实现] NDJSON / JSON Lines 逐行校验：错误行号定位、流式分片解析与大文件抽样统计
-- 108 [未实现] CSV 方言自动检测、列类型推断、异常单元格列表与可配置导出 Schema
-- 109 [未实现] 多源配置深度合并工作台：JSON/YAML/TOML 三路输入、合并策略对比与冲突 diff
-- 110 [未实现] JSONata 表达式求值：示例数据集、中间步骤追踪与类型错误定位
-- 111 [未实现] HAR 文件导入分析：请求瀑布时序、状态码分布、慢请求排行与 cURL 片段导出
-- 112 [未实现] cURL 命令与 fetch/axios/got 代码双向转换（含 Header、Body、证书与代理参数）
-- 113 [未实现] OpenAPI 3 片段浏览器：路径/Schema 搜索、示例请求构造与响应 mock 预览
-- 114 [未实现] Postman Collection v2.1 导入：环境变量替换、批量请求编排预览与断言规则摘要
-- 115 [未实现] SOAP Envelope 解析：Body 摘要、WS-Security 头字段展示与 WSDL 片段 XSD 校验
-- 116 [未实现] Server-Sent Events 客户端：流式接收、Last-Event-ID 断线重连与事件类型过滤
-- 117 [未实现] HTTP 缓存策略模拟器：Cache-Control/ETag/Last-Modified 组合、304 判定与存储分区说明
-- 118 [未实现] Rate Limit 响应头解析（Retry-After、X-RateLimit-*）：重试窗口时间线与配额可视化
-- 119 [未实现] gRPC-Web / Connect Unary 调用 Playground（Protobuf JSON 映射、metadata 与错误码说明）
-- 120 [未实现] GraphQL 内省浏览器：Schema 树、查询自动生成、字段 deprecation 与 cost 估算演示
-- 121 [未实现] OAuth2 PKCE 授权码流程交互模拟：code_verifier/challenge 生成、回调参数解析与状态校验
-- 122 [未实现] JWT 签名验证工作台：JWKS 导入、alg 探测、claims 校验规则与 clock skew 容忍配置
-- 123 [未实现] WebAuthn / FIDO2 注册与断言流程说明页：challenge、RP ID 与 attestation 字段摘要
-- 124 [未实现] SAML 2.0 断言 Base64 解码：Issuer/Subject/Conditions 摘要与时效校验提示
-- 125 [未实现] CSRF 防护策略对比演示：Double Submit Cookie、Synchronizer Token 与 SameSite 组合说明
-- 126 [未实现] Content-Security-Policy 指令解析器：指令冲突检测、report-uri 模拟与违规样例生成
-- 127 [未实现] CORS 预检诊断：Origin/Method/Header 组合模拟、简单/非简单请求判定与修复建议
-- 128 [未实现] Subresource Integrity 哈希生成：sha256/sha384/sha512 多算法、integrity 属性拼装与校验
-- 129 [未实现] 密钥派生参数对比（PBKDF2 / scrypt / Argon2）：迭代次数、盐值长度与耗时基准演示
-- 130 [未实现] 非对称密钥对生成与 PEM / JWK / SPKI 格式互转（仅浏览器 Web Crypto，含用途与风险提示）
+- 101 [已完成] JSON Schema 多版本校验、组合关键字（allOf/oneOf）与 `$ref` 解析及错误路径树定位
+- 102 [已完成] JSON Patch（RFC 6902）与 JSON Merge Patch 双模式：补丁生成、应用预览与冲突检测
+- 103 [已完成] JMESPath / JSONPath 查询表达式编辑器：结果树高亮、路径复制与多文档批量查询
+- 104 [已完成] YAML 锚点、别名与合并键解析调试：引用链可视化、循环引用检测与 JSON 导出
+- 105 [已完成] TOML 文档解析校验、与 JSON/YAML 互转及表格/内联表结构树形浏览
+- 106 [已完成] XML XPath / XQuery -lite 查询：命名空间前缀映射、节点路径定位与结果集导出
+- 107 [已完成] NDJSON / JSON Lines 逐行校验：错误行号定位、流式分片解析与大文件抽样统计
+- 108 [已完成] CSV 方言自动检测、列类型推断、异常单元格列表与可配置导出 Schema
+- 109 [已完成] 多源配置深度合并工作台：JSON/YAML/TOML 三路输入、合并策略对比与冲突 diff
+- 110 [已完成] JSONata 表达式求值：示例数据集、中间步骤追踪与类型错误定位
+- 111 [已完成] HAR 文件导入分析：请求瀑布时序、状态码分布、慢请求排行与 cURL 片段导出
+- 112 [已完成] cURL 命令与 fetch/axios/got 代码双向转换（含 Header、Body、证书与代理参数）
+- 113 [已完成] OpenAPI 3 片段浏览器：路径/Schema 搜索、示例请求构造与响应 mock 预览
+- 114 [已完成] Postman Collection v2.1 导入：环境变量替换、批量请求编排预览与断言规则摘要
+- 115 [已完成] SOAP Envelope 解析：Body 摘要、WS-Security 头字段展示与 WSDL 片段 XSD 校验
+- 116 [已完成] Server-Sent Events 客户端：流式接收、Last-Event-ID 断线重连与事件类型过滤
+- 117 [已完成] HTTP 缓存策略模拟器：Cache-Control/ETag/Last-Modified 组合、304 判定与存储分区说明
+- 118 [已完成] Rate Limit 响应头解析（Retry-After、X-RateLimit-*）：重试窗口时间线与配额可视化
+- 119 [已完成] gRPC-Web / Connect Unary 调用 Playground（Protobuf JSON 映射、metadata 与错误码说明）
+- 120 [已完成] GraphQL 内省浏览器：Schema 树、查询自动生成、字段 deprecation 与 cost 估算演示
+- 121 [已完成] OAuth2 PKCE 授权码流程交互模拟：code_verifier/challenge 生成、回调参数解析与状态校验
+- 122 [已完成] JWT 签名验证工作台：JWKS 导入、alg 探测、claims 校验规则与 clock skew 容忍配置
+- 123 [已完成] WebAuthn / FIDO2 注册与断言流程说明页：challenge、RP ID 与 attestation 字段摘要
+- 124 [已完成] SAML 2.0 断言 Base64 解码：Issuer/Subject/Conditions 摘要与时效校验提示
+- 125 [已完成] CSRF 防护策略对比演示：Double Submit Cookie、Synchronizer Token 与 SameSite 组合说明
+- 126 [已完成] Content-Security-Policy 指令解析器：指令冲突检测、report-uri 模拟与违规样例生成
+- 127 [已完成] CORS 预检诊断：Origin/Method/Header 组合模拟、简单/非简单请求判定与修复建议
+- 128 [已完成] Subresource Integrity 哈希生成：sha256/sha384/sha512 多算法、integrity 属性拼装与校验
+- 129 [已完成] 密钥派生参数对比（PBKDF2 / scrypt / Argon2）：迭代次数、盐值长度与耗时基准演示
+- 130 [已完成] 非对称密钥对生成与 PEM / JWK / SPKI 格式互转（仅浏览器 Web Crypto，含用途与风险提示）
 - 131 [未实现] JavaScript AST 可视化：Esprima/Babel 解析、节点树展开、源码位置跳转与选中节点 JSON 导出
 - 132 [未实现] Babel 插件 Transform 沙箱：插件链配置、输入源码→输出对比与 source map 映射预览
 - 133 [未实现] TypeScript 类型查询演示：tsconfig 片段、类型打印（typeToString）与 d.ts 草稿生成

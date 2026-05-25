@@ -1,64 +1,64 @@
-/** 当前已落地的工具条目（081～100），首页列表与 ToolPage 实现一致 */
+/** 当前已落地的工具条目（121～130），首页列表与 ToolPage 实现一致 */
 export const tools = [
   {
-    id: '091',
-    name: '弱网与请求排队',
+    id: '121',
+    name: 'OAuth2 PKCE 流程模拟器',
     summary:
-      '在线/离线/降级网络画像、请求入队与重放、背压与持久化策略演示',
+      'code_verifier/challenge 生成，授权 URL 组装，回调参数解析与 token 交换草稿',
   },
   {
-    id: '092',
-    name: '路由懒加载与分包',
+    id: '122',
+    name: 'JWT 签名验证工作台',
     summary:
-      '按工具拆分的动态 import、预取、错误边界与体积/瀑布分析 Playground',
+      'JWT 三段解析，JWKS 验签，exp/nbf/iss/aud claims 校验与 clock skew 配置',
   },
   {
-    id: '093',
-    name: '并发上限任务队列',
+    id: '123',
+    name: 'WebAuthn/FIDO2 解释器',
     summary:
-      '有界并发池、优先级与取消、溢出策略与 Worker/主线程任务演示',
+      '注册/断言选项 JSON 预览，clientDataJSON 与 authData 摘要，RP ID 与 capability 说明',
   },
   {
-    id: '094',
-    name: '未保存离开提示',
+    id: '124',
+    name: 'SAML 断言解码器',
     summary:
-      '脏检测、beforeunload 与路由守卫拦截、多标签租约与无障碍对话框',
+      'SAML 2.0 Base64/DEFLATE 解码，Issuer/Subject/Conditions 摘要与时效校验',
   },
   {
-    id: '095',
-    name: '依赖健康检查面板',
+    id: '125',
+    name: 'CSRF 防护策略对比',
     summary:
-      '多目标探测、超时与熔断、延迟 sparkline 与错误分类展示',
+      'Double Submit Cookie、Synchronizer Token、SameSite 三种模型交互剧本与修复 checklist',
   },
   {
-    id: '096',
-    name: '本地设置导入导出',
+    id: '126',
+    name: 'CSP 指令解析器',
     summary:
-      '设置快照版本、校验与迁移链、diff 预览与敏感字段脱敏',
+      'Content-Security-Policy 指令解析，冲突检测，违规样例模拟与 report JSON 预览',
   },
   {
-    id: '097',
-    name: '实验与灰度 UI 矩阵',
+    id: '127',
+    name: 'CORS 预检诊断',
     summary:
-      '特性开关与分桶规则、变体矩阵与命中原因、紧急关停演示',
+      '简单/非简单请求判定，OPTIONS 预检模拟，Allow-Origin 匹配与修复建议',
   },
   {
-    id: '098',
-    name: 'API 弃用与 Sunset 横幅',
+    id: '128',
+    name: 'SRI 哈希生成器',
     summary:
-      'Deprecation/Sunset 等响应头解析、站内横幅与 snooze 状态机',
+      'sha256/sha384/sha512 integrity 生成，批量 manifest 与 digest 校验模式',
   },
   {
-    id: '099',
-    name: '出站 HTTP 韧性策略',
+    id: '129',
+    name: '密钥派生参数对比',
     summary:
-      '超时、重试、退避与取消的统一 policyFetch 与时间线观测',
+      'PBKDF2/scrypt/Argon2 参数配置，派生耗时基准与弱参数警告',
   },
   {
-    id: '100',
-    name: '构建溯源与安全审计',
+    id: '130',
+    name: '非对称密钥转换器',
     summary:
-      '运行时版本信息、Source Map 策略说明、审计 JSON 与许可证聚合',
+      'RSA/EC/Ed25519 密钥对生成，PEM/JWK/SPKI 互转与公钥指纹摘要',
   },
 ]
 

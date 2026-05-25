@@ -177,16 +177,16 @@
 - 128 [已完成] Subresource Integrity 哈希生成：sha256/sha384/sha512 多算法、integrity 属性拼装与校验
 - 129 [已完成] 密钥派生参数对比（PBKDF2 / scrypt / Argon2）：迭代次数、盐值长度与耗时基准演示
 - 130 [已完成] 非对称密钥对生成与 PEM / JWK / SPKI 格式互转（仅浏览器 Web Crypto，含用途与风险提示）
-- 131 [未实现] JavaScript AST 可视化：Esprima/Babel 解析、节点树展开、源码位置跳转与选中节点 JSON 导出
-- 132 [未实现] Babel 插件 Transform 沙箱：插件链配置、输入源码→输出对比与 source map 映射预览
-- 133 [未实现] TypeScript 类型查询演示：tsconfig 片段、类型打印（typeToString）与 d.ts 草稿生成
-- 134 [未实现] ESLint 扁平配置草稿编辑器：规则启停、样例代码诊断结果与 fix 预览（纯前端 linter）
-- 135 [未实现] Prettier 多文件格式化 diff：选项 profile、忽略文件模式与并排/统一 diff 切换
-- 136 [未实现] Source Map 栈帧还原：generated↔original 位置映射、names 查找与多段 map 链接
-- 137 [未实现] Rollup / Webpack stats.json 导入：模块依赖图、chunk 体积 treemap 与重复依赖检测
-- 138 [未实现] Tree-shaking 前后模块对比：sideEffects 标记影响、未引用 export 列表与体积估算
-- 139 [未实现] 正则引擎高级调试：捕获组回溯说明、Lookahead/Lookbehind 可视化与 catastrophic backtracking 警告
-- 140 [未实现] Git unified diff / patch 解析：hunk 导航、文件重命名检测与 apply 冲突预览（纯文本层）
+- 131 [已完成] JavaScript AST 可视化：Esprima/Babel 解析、节点树展开、源码位置跳转与选中节点 JSON 导出
+- 132 [已完成] Babel 插件 Transform 沙箱：插件链配置、输入源码→输出对比与 source map 映射预览
+- 133 [已完成] TypeScript 类型查询演示：tsconfig 片段、类型打印（typeToString）与 d.ts 草稿生成
+- 134 [已完成] ESLint 扁平配置草稿编辑器：规则启停、样例代码诊断结果与 fix 预览（纯前端 linter）
+- 135 [已完成] Prettier 多文件格式化 diff：选项 profile、忽略文件模式与并排/统一 diff 切换
+- 136 [已完成] Source Map 栈帧还原：generated↔original 位置映射、names 查找与多段 map 链接
+- 137 [已完成] Rollup / Webpack stats.json 导入：模块依赖图、chunk 体积 treemap 与重复依赖检测
+- 138 [已完成] Tree-shaking 前后模块对比：sideEffects 标记影响、未引用 export 列表与体积估算
+- 139 [已完成] 正则引擎高级调试：捕获组回溯说明、Lookahead/Lookbehind 可视化与 catastrophic backtracking 警告
+- 140 [已完成] Git unified diff / patch 解析：hunk 导航、文件重命名检测与 apply 冲突预览（纯文本层）
 - 141 [未实现] SQL 多方言差异对照：MySQL / PostgreSQL / SQLite 语法转换提示与函数映射表
 - 142 [未实现] SQL EXPLAIN 文本解析：算子树可视化、成本字段摘要与全表扫描高亮
 - 143 [未实现] ER 图 DSL 编辑器（Mermaid dbDiagram 或等价）：实体关系渲染、导出 SQL DDL 草稿

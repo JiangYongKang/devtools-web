@@ -11,11 +11,15 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@babel/parser": "^7.29.7",
+    "esprima": "^4.0.1",
     "jsonata": "^2.2.1",
+    "mermaid": "^11.15.0",
     "pako": "^2.1.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-router-dom": "^7.6.1",
+    "typescript": "^6.0.3",
     "yaml": "^2.8.4"
   },
   "devDependencies": {

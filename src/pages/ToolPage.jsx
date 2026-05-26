@@ -3,35 +3,8 @@ import { Link, Navigate, useParams } from 'react-router-dom'
 import { getToolById } from '../data/tools'
 
 const IMPLEMENTED_TOOLS = {
-  '121': lazy(() =>
-    import('../tools/oauth2-pkce-flow-simulator/OAuth2PkceFlowSimulatorTool.jsx'),
-  ),
-  '122': lazy(() =>
-    import('../tools/jwt-signature-verifier-workbench/JwtSignatureVerifierTool.jsx'),
-  ),
-  '123': lazy(() =>
-    import('../tools/webauthn-fido2-explainer/WebAuthnFido2ExplainerTool.jsx'),
-  ),
-  '124': lazy(() =>
-    import('../tools/saml-assertion-decoder/SamlAssertionDecoderTool.jsx'),
-  ),
-  '125': lazy(() =>
-    import('../tools/csrf-protection-comparison/CsrfProtectionComparisonTool.jsx'),
-  ),
-  '126': lazy(() =>
-    import('../tools/csp-directive-parser/CspDirectiveParserTool.jsx'),
-  ),
-  '127': lazy(() =>
-    import('../tools/cors-preflight-diagnostics/CorsPreflightDiagnosticsTool.jsx'),
-  ),
-  '128': lazy(() =>
-    import('../tools/subresource-integrity-generator/SubresourceIntegrityGeneratorTool.jsx'),
-  ),
-  '129': lazy(() =>
-    import('../tools/key-derivation-benchmark/KeyDerivationBenchmarkTool.jsx'),
-  ),
-  '130': lazy(() =>
-    import('../tools/asymmetric-key-converter/AsymmetricKeyConverterTool.jsx'),
+  '151': lazy(() =>
+    import('../tools/ansible-playbook-preview/AnsiblePlaybookPreviewTool.jsx'),
   ),
 }
 

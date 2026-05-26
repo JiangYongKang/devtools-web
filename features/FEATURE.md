@@ -27,11 +27,16 @@
 - 代码改动必须控制在当前任务声明的目录范围内，避免跨任务耦合。
 - 文档描述以可验收结果为导向，避免实现细节绑死研发方案。
 
+### 开发与验证约束
+- 禁止为验证小改动而反复执行全量打包、构建或端到端测试命令；同一类验证命令（如 `npm run build`、`npm test`、全量 lint）在同一任务会话内至多执行一次。
+- 若首次执行失败，应通过阅读报错、对照代码与当前任务目录内单测定位并修复，不得采用「改一行再跑一次打包碰运气」的方式。
+- 优先依靠当前任务声明的纯 JS 单元测试与页面手工验证完成任务目标；专注代码逻辑正确性与任务边界内的实现质量。
+
 ### TASK 推荐模板（无空行）
 - 任务目标：写 3～5 条功能（同一段落内连续表述、不出现空行；可在段内用分号分隔各条能力，也可用短横线列表项但条目之间不写空行）；其中须包含：核心主路径（用户首要完成的一件事）；围绕核心的多条延伸能力，按领域穷尽同类场景常见维度（仍以 JSON 为例：转义与去转义、搜索与高亮、键排序、JSONPath、增删改键值、格式化选项、校验与错位提示、diff、复制下载、大体量行为的策略或限制说明等）；上手与可操作（如示例一键填充、关键说明）；健壮与边界（非法输入、报错、浏览器能力不支持、大体量与安全展示等）；有外部 API 时须单列对接与异常（契约、超时、权限、HTTP 或空响应等）。条目总数仍控制在 3～5：可将相近能力合并为一条内的分号子句，但不要借合并删减已构思的能力；凡写入 TASK「任务目标」者须全部交付实现。
 - 实现范围：页面文件夹、逻辑函数文件夹、测试文件夹。
 - API 信息（可选）：接口列表、请求方式、主要参数、返回字段、错误约定。
-- 任务约束：不得访问或修改其他任务目录，不限制具体组件命名。
+- 任务约束：不得访问或修改其他任务目录，不限制具体组件命名；须写明「开发与验证约束」（全量打包/构建/测试同一会话至多一次、失败靠读报错与任务内单测修复、禁止改一行再跑打包碰运气、优先任务内单测与页面手工验证）。
 - 验收标准：对「任务目标」中每一条功能均能逐条核对；写清页面行为、纯 JS 函数行为、测试通过标准；凡任务目标中出现的功能不得在验收中单列豁免（若需减量须回到任务拆分，另起编号）。
 
 ### DOC 推荐模板
@@ -187,26 +192,26 @@
 - 138 [已完成] Tree-shaking 前后模块对比：sideEffects 标记影响、未引用 export 列表与体积估算
 - 139 [已完成] 正则引擎高级调试：捕获组回溯说明、Lookahead/Lookbehind 可视化与 catastrophic backtracking 警告
 - 140 [已完成] Git unified diff / patch 解析：hunk 导航、文件重命名检测与 apply 冲突预览（纯文本层）
-- 141 [未实现] SQL 多方言差异对照：MySQL / PostgreSQL / SQLite 语法转换提示与函数映射表
-- 142 [未实现] SQL EXPLAIN 文本解析：算子树可视化、成本字段摘要与全表扫描高亮
-- 143 [未实现] ER 图 DSL 编辑器（Mermaid dbDiagram 或等价）：实体关系渲染、导出 SQL DDL 草稿
-- 144 [未实现] MongoDB 查询文档 Builder：find / aggregate 管道 stages 编排、样例文档匹配预览
-- 145 [未实现] Redis 命令序列模拟器：STRING/HASH/LIST/SET/ZSET 操作、TTL 时间线与内存键空间浏览
-- 146 [未实现] InfluxDB Line Protocol 解析：measurement/tag/field 拆分、时间戳精度与类型推断
-- 147 [未实现] Cypher 查询语法高亮与 EXPLAIN 计划文本树（Neo4j 风格，纯前端演示）
-- 148 [未实现] Apache Parquet 元数据只读预览：schema、row group 统计与列编码信息（WASM/纯 JS 解析）
-- 149 [未实现] 数据库 Migration SQL 依赖排序：外键拓扑排序、循环依赖检测与执行批次建议
-- 150 [未实现] CRDT 文本合并演示（LWW / RGA 简化版）：多副本编辑、合并结果与冲突标记可视化
-- 151 [未实现] Cron 表达式高级调度：下次 N 次触发时间序列、多时区对照、非法日期（如 2 月 30 日）提示
-- 152 [未实现] Kubernetes Manifest 校验：apiVersion/kind 摘要、Probe/Resource 字段检查与 YAML→JSON 预览
-- 153 [未实现] Docker Compose 服务依赖图：depends_on/healthcheck 解析、启动顺序拓扑与端口映射表
-- 154 [未实现] Terraform HCL 片段格式化与 plan 输出文本解析：resource change 摘要与 drift 标记
-- 155 [未实现] Ansible Playbook YAML 任务链预览：handler/notify 关系、变量插值与 dry-run 命令生成
-- 156 [未实现] GitHub Actions workflow YAML 可视化：job 依赖 DAG、matrix 展开与 secrets 占位说明
-- 157 [未实现] Helm Chart 模板渲染：values.yaml 注入、manifest 预览与 `tpl` 函数调试
-- 158 [未实现] Nginx / Caddy 配置片段语法高亮与 upstream 块结构摘要（多文件 include 模拟）
-- 159 [未实现] systemd unit 文件解析：Unit/Service/Install 段摘要与依赖顺序说明
-- 160 [未实现] Prometheus 告警规则 YAML 校验：expr 语法检查、标签模板预览与 firing 样例
+- 141 [已完成] SQL 多方言差异对照：MySQL / PostgreSQL / SQLite 语法转换提示与函数映射表
+- 142 [已完成] SQL EXPLAIN 文本解析：算子树可视化、成本字段摘要与全表扫描高亮
+- 143 [已完成] ER 图 DSL 编辑器（Mermaid dbDiagram 或等价）：实体关系渲染、导出 SQL DDL 草稿
+- 144 [已完成] MongoDB 查询文档 Builder：find / aggregate 管道 stages 编排、样例文档匹配预览
+- 145 [已完成] Redis 命令序列模拟器：STRING/HASH/LIST/SET/ZSET 操作、TTL 时间线与内存键空间浏览
+- 146 [已完成] InfluxDB Line Protocol 解析：measurement/tag/field 拆分、时间戳精度与类型推断
+- 147 [已完成] Cypher 查询语法高亮与 EXPLAIN 计划文本树（Neo4j 风格，纯前端演示）
+- 148 [已完成] Apache Parquet 元数据只读预览：schema、row group 统计与列编码信息（WASM/纯 JS 解析）
+- 149 [已完成] 数据库 Migration SQL 依赖排序：外键拓扑排序、循环依赖检测与执行批次建议
+- 150 [已完成] CRDT 文本合并演示（LWW / RGA 简化版）：多副本编辑、合并结果与冲突标记可视化
+- 151 [已完成] Cron 表达式高级调度：下次 N 次触发时间序列、多时区对照、非法日期（如 2 月 30 日）提示
+- 152 [已完成] Kubernetes Manifest 校验：apiVersion/kind 摘要、Probe/Resource 字段检查与 YAML→JSON 预览
+- 153 [已完成] Docker Compose 服务依赖图：depends_on/healthcheck 解析、启动顺序拓扑与端口映射表
+- 154 [已完成] Terraform HCL 片段格式化与 plan 输出文本解析：resource change 摘要与 drift 标记
+- 155 [已完成] Ansible Playbook YAML 任务链预览：handler/notify 关系、变量插值与 dry-run 命令生成
+- 156 [已完成] GitHub Actions workflow YAML 可视化：job 依赖 DAG、matrix 展开与 secrets 占位说明
+- 157 [已完成] Helm Chart 模板渲染：values.yaml 注入、manifest 预览与 `tpl` 函数调试
+- 158 [已完成] Nginx / Caddy 配置片段语法高亮与 upstream 块结构摘要（多文件 include 模拟）
+- 159 [已完成] systemd unit 文件解析：Unit/Service/Install 段摘要与依赖顺序说明
+- 160 [已完成] Prometheus 告警规则 YAML 校验：expr 语法检查、标签模板预览与 firing 样例
 - 161 [未实现] 多通道颜色空间转换链：RGB↔HSL↔HSV↔OKLCH↔CMYK，ΔE 色差计算与 palettes 导出
 - 162 [未实现] CSS 自定义属性（Design Token）主题矩阵：亮/暗/高对比多套 token 切换与 contrast 检查
 - 163 [未实现] SVG 路径命令解析与可视化编辑：M/L/C/Q/A 分段高亮、边界框与路径长度估算

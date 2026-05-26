@@ -1,64 +1,64 @@
-/** 当前已落地的工具条目（121～130），首页列表与 ToolPage 实现一致 */
+/** 当前已落地的工具条目（151～160），首页列表与 ToolPage 实现一致 */
 export const tools = [
   {
-    id: '121',
-    name: 'OAuth2 PKCE 流程模拟器',
+    id: '151',
+    name: 'Cron 高级调度器',
     summary:
-      'code_verifier/challenge 生成，授权 URL 组装，回调参数解析与 token 交换草稿',
+      '标准五段与 Quartz 六/七段解析、未来 N 次触发序列、多时区对照与夏令时边界标注、非法日期提示',
   },
   {
-    id: '122',
-    name: 'JWT 签名验证工作台',
+    id: '152',
+    name: 'Kubernetes Manifest 校验器',
     summary:
-      'JWT 三段解析，JWKS 验签，exp/nbf/iss/aud claims 校验与 clock skew 配置',
+      '多文档 YAML 解析、apiVersion/kind 摘要、Probe/Resource 字段检查、风险警告与 YAML→JSON 预览',
   },
   {
-    id: '123',
-    name: 'WebAuthn/FIDO2 解释器',
+    id: '153',
+    name: 'Docker Compose 依赖图',
     summary:
-      '注册/断言选项 JSON 预览，clientDataJSON 与 authData 摘要，RP ID 与 capability 说明',
+      'depends_on/healthcheck 解析、服务依赖 DAG、启动顺序拓扑批次与端口映射表',
   },
   {
-    id: '124',
-    name: 'SAML 断言解码器',
+    id: '154',
+    name: 'Terraform HCL / Plan 解析器',
     summary:
-      'SAML 2.0 Base64/DEFLATE 解码，Issuer/Subject/Conditions 摘要与时效校验',
+      'HCL 片段缩进格式化、terraform plan 文本解析、resource 变更摘要与 drift 分级标记',
   },
   {
-    id: '125',
-    name: 'CSRF 防护策略对比',
+    id: '155',
+    name: 'Ansible Playbook 预览器',
     summary:
-      'Double Submit Cookie、Synchronizer Token、SameSite 三种模型交互剧本与修复 checklist',
+      'Playbook 任务链预览、handler/notify 关系图、变量插值提示与 ansible-playbook dry-run 命令生成',
   },
   {
-    id: '126',
-    name: 'CSP 指令解析器',
+    id: '156',
+    name: 'GitHub Actions Workflow 可视化',
     summary:
-      'Content-Security-Policy 指令解析，冲突检测，违规样例模拟与 report JSON 预览',
+      'workflow YAML 解析、job 依赖 DAG、matrix 组合展开与 secrets 占位说明',
   },
   {
-    id: '127',
-    name: 'CORS 预检诊断',
+    id: '157',
+    name: 'Helm Chart 模板渲染器',
     summary:
-      '简单/非简单请求判定，OPTIONS 预检模拟，Allow-Origin 匹配与修复建议',
+      'Chart.yaml/values.yaml/模板解析、Values 静态注入预览、tpl 函数调试与多文档 Manifest 展示',
   },
   {
-    id: '128',
-    name: 'SRI 哈希生成器',
+    id: '158',
+    name: 'Nginx/Caddy 配置检视器',
     summary:
-      'sha256/sha384/sha512 integrity 生成，批量 manifest 与 digest 校验模式',
+      '双方言配置解析、语法高亮、upstream 块摘要、虚拟 include 文件合并与循环检测',
   },
   {
-    id: '129',
-    name: '密钥派生参数对比',
+    id: '159',
+    name: 'systemd Unit 解析器',
     summary:
-      'PBKDF2/scrypt/Argon2 参数配置，派生耗时基准与弱参数警告',
+      'Unit/Service/Install 等分段展示、Requires/After 依赖图、启动顺序批次与常用字段摘要',
   },
   {
-    id: '130',
-    name: '非对称密钥转换器',
+    id: '160',
+    name: 'Prometheus 告警规则校验器',
     summary:
-      'RSA/EC/Ed25519 密钥对生成，PEM/JWK/SPKI 互转与公钥指纹摘要',
+      '告警/录制规则 YAML 解析、PromQL 子集检查、标签模板预览与 firing 样例求值',
   },
 ]
 

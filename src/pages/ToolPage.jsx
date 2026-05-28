@@ -3,8 +3,35 @@ import { Link, Navigate, useParams } from 'react-router-dom'
 import { getToolById } from '../data/tools'
 
 const IMPLEMENTED_TOOLS = {
-  '151': lazy(() =>
-    import('../tools/ansible-playbook-preview/AnsiblePlaybookPreviewTool.jsx'),
+  '181': lazy(() =>
+    import('../tools/probability-distribution-sampler/ProbabilityDistributionSamplerTool.jsx'),
+  ),
+  '182': lazy(() =>
+    import('../tools/monte-carlo-pi-estimator/MonteCarloPiEstimator.jsx'),
+  ),
+  '183': lazy(() =>
+    import('../tools/linear-regression-workbench/LinearRegressionWorkbench.jsx'),
+  ),
+  '184': lazy(() =>
+    import('../tools/matrix-operations-workbench/MatrixOperationsWorkbench.jsx'),
+  ),
+  '185': lazy(() =>
+    import('../tools/dimensional-unit-converter/DimensionalUnitConverterTool.jsx'),
+  ),
+  '186': lazy(() =>
+    import('../tools/arbitrary-precision-calculator/ArbitraryPrecisionCalculatorTool.jsx'),
+  ),
+  '187': lazy(() =>
+    import('../tools/business-date-rules-engine/BusinessDateRulesEngineTool.jsx'),
+  ),
+  '188': lazy(() =>
+    import('../tools/financial-cashflow-calculator/FinancialCashflowCalculator.jsx'),
+  ),
+  '189': lazy(() =>
+    import('../tools/geo-coordinate-datum-converter/GeoCoordinateDatumConverterTool.jsx'),
+  ),
+  '190': lazy(() =>
+    import('../tools/geohash-distance-calculator/GeohashDistanceCalculatorTool.jsx'),
   ),
 }
 

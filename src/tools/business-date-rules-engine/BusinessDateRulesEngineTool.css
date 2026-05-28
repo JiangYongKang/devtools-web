@@ -1,0 +1,470 @@
+.business-date-rules-engine {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+}
+
+.business-date-rules-engine .tool-section {
+  margin-bottom: 24px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.business-date-rules-engine h2 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  color: #1a1a1a;
+}
+
+.business-date-rules-engine h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.business-date-rules-engine h4 {
+  margin: 12px 0 8px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.business-date-rules-engine .tool-description {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.business-date-rules-engine .examples-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.business-date-rules-engine .example-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fafafa;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.business-date-rules-engine .example-btn:hover {
+  border-color: #4a90d9;
+  background: #f0f7ff;
+  transform: translateY(-2px);
+}
+
+.business-date-rules-engine .example-name {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+.business-date-rules-engine .example-desc {
+  color: #666;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.business-date-rules-engine .form-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  align-items: flex-end;
+}
+
+.business-date-rules-engine .form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 140px;
+}
+
+.business-date-rules-engine .form-group label {
+  font-size: 13px;
+  color: #4a5568;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.business-date-rules-engine .form-group input,
+.business-date-rules-engine .form-group select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.business-date-rules-engine .form-group input:focus,
+.business-date-rules-engine .form-group select:focus {
+  outline: none;
+  border-color: #4a90d9;
+  box-shadow: 0 0 0 2px rgba(74, 144, 217, 0.2);
+}
+
+.business-date-rules-engine .checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #4a5568;
+}
+
+.business-date-rules-engine .checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.business-date-rules-engine .action-row {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.business-date-rules-engine .primary-btn,
+.business-date-rules-engine .secondary-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.business-date-rules-engine .primary-btn {
+  background: #4a90d9;
+  color: #fff;
+}
+
+.business-date-rules-engine .primary-btn:hover:not(:disabled) {
+  background: #3a7bc0;
+}
+
+.business-date-rules-engine .primary-btn:disabled {
+  background: #a0c0dc;
+  cursor: not-allowed;
+}
+
+.business-date-rules-engine .secondary-btn {
+  background: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.business-date-rules-engine .secondary-btn:hover:not(:disabled) {
+  background: #e0e0e0;
+}
+
+.business-date-rules-engine .secondary-btn:disabled {
+  color: #999;
+  cursor: not-allowed;
+}
+
+.business-date-rules-engine .result-box {
+  padding: 16px;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  margin-top: 16px 0;
+}
+
+.business-date-rules-engine .result-value {
+  font-family: 'SFMono-Regular', Consolas, monospace;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a365d;
+  margin-bottom: 8px;
+}
+
+.business-date-rules-engine .result-meta {
+  font-size: 13px;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.business-date-rules-engine .warning-box {
+  padding: 12px 16px;
+  background: #fffaf0;
+  border: 1px solid #feebc8;
+  border-left: 4px solid #dd6b20;
+  border-radius: 6px;
+  color: #7b341e;
+  margin: 12px 0;
+}
+
+.business-date-rules-engine .warning-box strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #c05621;
+}
+
+.business-date-rules-engine .error-box {
+  padding: 12px 16px;
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-left: 4px solid #e53e3e;
+  border-radius: 6px;
+  color: #742a2a;
+  margin: 12px 0;
+}
+
+.business-date-rules-engine .error-box strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #c53030;
+}
+
+.business-date-rules-engine .info-box {
+  padding: 12px 16px;
+  background: #f0f7ff;
+  border: 1px solid #d9e6f2;
+  border-left: 4px solid #4a90d9;
+  border-radius: 6px;
+  color: #1a365d;
+  margin: 12px 0;
+}
+
+.business-date-rules-engine .info-box strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #2c5282;
+}
+
+.business-date-rules-engine .success-box {
+  padding: 12px 16px;
+  background: #f0fff4;
+  border: 1px solid #c6f6d5;
+  border-left: 4px solid #38a169;
+  border-radius: 6px;
+  color: #276749;
+  margin: 12px 0;
+}
+
+.business-date-rules-engine .success-box strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #22543d;
+}
+
+.business-date-rules-engine .skipped-list {
+  margin-top: 8px;
+  padding-left: 20px;
+  font-size: 13px;
+  color: #4a5568;
+}
+
+.business-date-rules-engine .skipped-list li {
+  margin: 2px 0;
+}
+
+.business-date-rules-engine .milestone-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px 0;
+}
+
+.business-date-rules-engine .milestone-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+}
+
+.business-date-rules-engine .milestone-percent {
+  flex: 0 0 60px;
+  font-weight: 600;
+  color: #2c5282;
+  font-family: 'SFMono-Regular', Consolas, monospace;
+}
+
+.business-date-rules-engine .milestone-progress {
+  flex: 0 0 100px;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.business-date-rules-engine .milestone-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4a90d9, #68d391);
+  border-radius: 4px;
+}
+
+.business-date-rules-engine .milestone-time {
+  flex: 1;
+  font-family: 'SFMono-Regular', Consolas, monospace;
+  font-size: 13px;
+  color: #2d3748;
+}
+
+.business-date-rules-engine .holiday-table-editor {
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 8px;
+}
+
+.business-date-rules-engine .holiday-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.business-date-rules-engine .holiday-table th,
+.business-date-rules-engine .holiday-table td {
+  padding: 6px 10px;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.business-date-rules-engine .holiday-table th {
+  background: #f7fafc;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.business-date-rules-engine .holiday-table tr.holiday-row td {
+  background: #fff5f5;
+}
+
+.business-date-rules-engine .holiday-table tr.workday-row td {
+  background: #f0fff4;
+}
+
+.business-date-rules-engine .json-editor {
+  width: 100%;
+  min-height: 150px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.business-date-rules-engine .json-editor:focus {
+  outline: none;
+  border-color: #4a90d9;
+  box-shadow: 0 0 0 2px rgba(74, 144, 217, 0.2);
+}
+
+.business-date-rules-engine .section-divider {
+  margin: 16px 0 8px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a5568;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.business-date-rules-engine .toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: fadeInUp 0.25s ease;
+}
+
+.business-date-rules-engine .toast.success {
+  background: #38a169;
+}
+
+.business-date-rules-engine .toast.error {
+  background: #e53e3e;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.business-date-rules-engine .empty-state {
+  padding: 40px 20px;
+  text-align: center;
+  color: #718096;
+}
+
+.business-date-rules-engine .empty-state .empty-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.business-date-rules-engine .empty-state h3 {
+  margin: 0 0 6px 0;
+  color: #2d3748;
+}
+
+.business-date-rules-engine .tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.business-date-rules-engine .tab-btn {
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #718096;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.15s ease;
+}
+
+.business-date-rules-engine .tab-btn.active {
+  color: #4a90d9;
+  border-bottom-color: #4a90d9;
+}
+
+.business-date-rules-engine .tab-btn:hover:not(.active) {
+  color: #2c5282;
+}
+
+.business-date-rules-engine .tab-content {
+  display: none;
+}
+
+.business-date-rules-engine .tab-content.active {
+  display: block;
+}
+
+.business-date-rules-engine .note-box {
+  padding: 10px 14px;
+  background: #fefce8;
+  border: 1px solid #fef08a;
+  border-left: 4px solid #eab308;
+  border-radius: 6px;
+  color: #854d0e;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 12px 0;
+}

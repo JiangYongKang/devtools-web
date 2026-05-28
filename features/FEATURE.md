@@ -212,36 +212,36 @@
 - 158 [已完成] Nginx / Caddy 配置片段语法高亮与 upstream 块结构摘要（多文件 include 模拟）
 - 159 [已完成] systemd unit 文件解析：Unit/Service/Install 段摘要与依赖顺序说明
 - 160 [已完成] Prometheus 告警规则 YAML 校验：expr 语法检查、标签模板预览与 firing 样例
-- 161 [未实现] 多通道颜色空间转换链：RGB↔HSL↔HSV↔OKLCH↔CMYK，ΔE 色差计算与 palettes 导出
-- 162 [未实现] CSS 自定义属性（Design Token）主题矩阵：亮/暗/高对比多套 token 切换与 contrast 检查
-- 163 [未实现] SVG 路径命令解析与可视化编辑：M/L/C/Q/A 分段高亮、边界框与路径长度估算
-- 164 [未实现] Canvas 2D 绘制指令录制回放：序列化 draw call、导出 PNG/SVG 与缩放适配
-- 165 [未实现] WebGL Shader 语法高亮与 uniform 摘要（GLSL ES 片段，错误行定位）
-- 166 [未实现] 音频 PCM / WAV 头解析：采样率/位深/声道、波形预览与片段导出
-- 167 [未实现] 视频容器元数据只读预览：MP4 moov/mdat 结构摘要与关键帧时间点列表
-- 168 [未实现] EXIF / IPTC 元数据提取与 GPS 坐标地图链接（本地文件，不上传服务器）
-- 169 [未实现] 字体文件（TTF/OTF/WOFF2）表结构摘要：glyph 数量、unicode range 与 family 名称
-- 170 [未实现] Lottie JSON 动画预览：图层树、关键帧摘要与播放控制（canvas/svg 渲染）
-- 171 [未实现] IPv6 地址规范化、压缩/展开互转、类型（ULA/GUA/link-local）判定与子网划分
-- 172 [未实现] BGP AS Path 与 Prefix 列表解析：CIDR 聚合预览与私有 ASN 标记
-- 173 [未实现] DNS 记录可视化（需公共 DoH API 或代理说明）：A/AAAA/CNAME/MX/TXT 结果与 TTL 展示
-- 174 [未实现] TLS 证书链解析：SAN 列表、有效期时间线、签名算法与弱 cipher 提示
-- 175 [未实现] WireGuard 配置片段解析：Peer/AllowedIPs 摘要与密钥格式校验（不含私钥存储）
-- 176 [未实现] NTP 时间偏移估算演示：客户端时间戳与 stratum/leap 字段说明（模拟或公共 API）
-- 177 [未实现] MQTT 主题与 payload 调试客户端：QoS/retain/will 配置与通配符订阅说明
-- 178 [未实现] STUN/TURN ICE candidate 解析：sdp m-line、candidate 字段摘要与连通性检查说明
-- 179 [未实现] eBPF / tcpdump 过滤表达式编译说明：BPF 指令草稿与人类可读对照（教学向）
-- 180 [未实现] SNMP OID 树浏览与 MIB 片段导入：trap varbind 解析演示
-- 181 [未实现] 概率分布采样与直方图可视化：正态/泊松/二项等参数可调、种子可复现
-- 182 [未实现] 蒙特卡洛 π 估算与收敛曲线：样本量、误差界与 Web Worker 并行分片
-- 183 [未实现] 线性回归 / 最小二乘演示：散点输入、拟合直线、R² 与残差图
-- 184 [未实现] 矩阵运算工作台：加减乘、转置、行列式（小矩阵）、可逆性检测与步骤说明
-- 185 [未实现] 单位换算链式推导：量纲分析、复合单位（如 m/s²→g）与精度保留策略
-- 186 [未实现] 大数 / 高精度小数运算演示：BigInt 与 decimal.js 风格运算对比及溢出提示
-- 187 [未实现] 日期业务规则引擎：工作日历、节假日跳过、时区 DST 边界与 SLA 截止计算
-- 188 [未实现] 金融复利 / 分期 / IRR 计算器：现金流序列输入、NPV 与敏感性表格
-- 189 [未实现] 地理坐标系转换：WGS84↔GCJ02↔BD09 演示与偏移量说明（合规提示）
-- 190 [未实现] Haversine 距离与 geohash 编解码：多点路径累计、精度级别与边界框
+- 161 [已完成] 多通道颜色空间转换链：RGB↔HSL↔HSV↔OKLCH↔CMYK，ΔE 色差计算与 palettes 导出
+- 162 [已完成] CSS 自定义属性（Design Token）主题矩阵：亮/暗/高对比多套 token 切换与 contrast 检查
+- 163 [已完成] SVG 路径命令解析与可视化编辑：M/L/C/Q/A 分段高亮、边界框与路径长度估算
+- 164 [已完成] Canvas 2D 绘制指令录制回放：序列化 draw call、导出 PNG/SVG 与缩放适配
+- 165 [已完成] WebGL Shader 语法高亮与 uniform 摘要（GLSL ES 片段，错误行定位）
+- 166 [已完成] 音频 PCM / WAV 头解析：采样率/位深/声道、波形预览与片段导出
+- 167 [已完成] MP4 容器元数据只读预览：moov/mdat 结构摘要与关键帧时间点列表
+- 168 [已完成] EXIF / IPTC 元数据提取与 GPS 坐标地图链接（本地文件，不上传服务器）
+- 169 [已完成] 字体文件（TTF/OTF/WOFF2）表结构摘要：glyph 数量、unicode range 与 family 名称
+- 170 [已完成] Lottie JSON 动画预览：图层树、关键帧摘要与播放控制（canvas/svg 渲染）
+- 171 [已完成] IPv6 地址规范化、压缩/展开互转、类型（ULA/GUA/link-local）判定与子网划分
+- 172 [已完成] BGP AS Path 与 Prefix 列表解析：CIDR 聚合预览与私有 ASN 标记
+- 173 [已完成] DNS 记录可视化（需公共 DoH API 或代理说明）：A/AAAA/CNAME/MX/TXT 结果与 TTL 展示
+- 174 [已完成] TLS 证书链解析：SAN 列表、有效期时间线、签名算法与弱 cipher 提示
+- 175 [已完成] WireGuard 配置片段解析：Peer/AllowedIPs 摘要与密钥格式校验（不含私钥存储）
+- 176 [已完成] NTP 时间偏移估算演示：客户端时间戳与 stratum/leap 字段说明（模拟或公共 API）
+- 177 [已完成] MQTT 主题与 payload 调试客户端：QoS/retain/will 配置与通配符订阅说明
+- 178 [已完成] STUN/TURN ICE candidate 解析：sdp m-line、candidate 字段摘要与连通性检查说明
+- 179 [已完成] eBPF / tcpdump 过滤表达式编译说明：BPF 指令草稿与人类可读对照（教学向）
+- 180 [已完成] SNMP OID 树浏览与 MIB 片段导入：trap varbind 解析演示
+- 181 [已完成] 概率分布采样与直方图可视化：正态/泊松/二项等参数可调、种子可复现
+- 182 [已完成] 蒙特卡洛 π 估算与收敛曲线：样本量、误差界与 Web Worker 并行分片
+- 183 [已完成] 线性回归 / 最小二乘演示：散点输入、拟合直线、R² 与残差图
+- 184 [已完成] 矩阵运算工作台：加减乘、转置、行列式（小矩阵）、可逆性检测与步骤说明
+- 185 [已完成] 单位换算链式推导：量纲分析、复合单位（如 m/s²→g）与精度保留策略
+- 186 [已完成] 大数 / 高精度小数运算演示：BigInt 与 decimal.js 风格运算对比及溢出提示
+- 187 [已完成] 日期业务规则引擎：工作日历、节假日跳过、时区 DST 边界与 SLA 截止计算
+- 188 [已完成] 金融复利 / 分期 / IRR 计算器：现金流序列输入、NPV 与敏感性表格
+- 189 [已完成] 地理坐标系转换：WGS84↔GCJ02↔BD09 演示与偏移量说明（合规提示）
+- 190 [已完成] Haversine 距离与 geohash 编解码：多点路径累计、精度级别与边界框
 - 191 [未实现] 状态机可视化编辑器：states/transitions 表、非法迁移检测与 Mermaid 导出
 - 192 [未实现] 有限自动机（DFA/NFA）与正则等价性演示：ε 闭包、最小化步骤说明
 - 193 [未实现] 背包 / 最短路径算法动画：Dijkstra、Knapsack 0/1 步骤回放与复杂度说明

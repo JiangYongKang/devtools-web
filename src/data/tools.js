@@ -1,64 +1,64 @@
-/** 当前已落地的工具条目（151～160），首页列表与 ToolPage 实现一致 */
+/** 当前已落地的工具条目（181～190），首页列表与 ToolPage 实现一致 */
 export const tools = [
   {
-    id: '151',
-    name: 'Cron 高级调度器',
+    id: '181',
+    name: '概率分布采样器',
     summary:
-      '标准五段与 Quartz 六/七段解析、未来 N 次触发序列、多时区对照与夏令时边界标注、非法日期提示',
+      '可复现 PRNG、正态/泊松/二项等多分布采样、直方图与理论 PDF/CDF、拟合检验与 CSV 导出',
   },
   {
-    id: '152',
-    name: 'Kubernetes Manifest 校验器',
+    id: '182',
+    name: '蒙特卡洛 π 估算器',
     summary:
-      '多文档 YAML 解析、apiVersion/kind 摘要、Probe/Resource 字段检查、风险警告与 YAML→JSON 预览',
+      '随机点法与 Buffon 针、收敛曲线与置信区间、方差缩减与 Web Worker 并行分片',
   },
   {
-    id: '153',
-    name: 'Docker Compose 依赖图',
+    id: '183',
+    name: '线性回归工作台',
     summary:
-      'depends_on/healthcheck 解析、服务依赖 DAG、启动顺序拓扑批次与端口映射表',
+      'OLS 最小二乘、R² 与预测区间、残差诊断、Cook 距离与离群点检测',
   },
   {
-    id: '154',
-    name: 'Terraform HCL / Plan 解析器',
+    id: '184',
+    name: '矩阵运算工作台',
     summary:
-      'HCL 片段缩进格式化、terraform plan 文本解析、resource 变更摘要与 drift 分级标记',
+      '矩阵加减乘、行列式与逆、LU 分解、条件数与高斯消元步骤展示',
   },
   {
-    id: '155',
-    name: 'Ansible Playbook 预览器',
+    id: '185',
+    name: '量纲单位换算器',
     summary:
-      'Playbook 任务链预览、handler/notify 关系图、变量插值提示与 ansible-playbook dry-run 命令生成',
+      'SI 七基维归约、复合单位链式换算、温度仿射变换、有效数字与量纲冲突检测',
   },
   {
-    id: '156',
-    name: 'GitHub Actions Workflow 可视化',
+    id: '186',
+    name: '任意精度计算器',
     summary:
-      'workflow YAML 解析、job 依赖 DAG、matrix 组合展开与 secrets 占位说明',
+      'BigInt 与高精度 Decimal、Number 三路对比、安全表达式解析与溢出提示',
   },
   {
-    id: '157',
-    name: 'Helm Chart 模板渲染器',
+    id: '187',
+    name: '业务日期规则引擎',
     summary:
-      'Chart.yaml/values.yaml/模板解析、Values 静态注入预览、tpl 函数调试与多文档 Manifest 展示',
+      '工作日历与节假日表、工作日/自然日运算、DST 边界检测与 SLA 截止计算',
   },
   {
-    id: '158',
-    name: 'Nginx/Caddy 配置检视器',
+    id: '188',
+    name: '金融现金流计算器',
     summary:
-      '双方言配置解析、语法高亮、upstream 块摘要、虚拟 include 文件合并与循环检测',
+      'NPV/IRR/XIRR、等额本息/本金摊还表、贴现率敏感性分析与 CSV 导出',
   },
   {
-    id: '159',
-    name: 'systemd Unit 解析器',
+    id: '189',
+    name: '大地坐标系转换器',
     summary:
-      'Unit/Service/Install 等分段展示、Requires/After 依赖图、启动顺序批次与常用字段摘要',
+      'WGS84↔GCJ02↔BD09 双向转换、偏移米级估算、境内外判定与 GeoJSON 导出',
   },
   {
-    id: '160',
-    name: 'Prometheus 告警规则校验器',
+    id: '190',
+    name: 'Geohash 距离计算器',
     summary:
-      '告警/录制规则 YAML 解析、PromQL 子集检查、标签模板预览与 firing 样例求值',
+      'geohash 编解码与邻格、Haversine 折线距离、前缀 bbox 与 GeoJSON 可视化',
   },
 ]
 
